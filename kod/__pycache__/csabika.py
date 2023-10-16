@@ -1,3 +1,7 @@
+import kezdes
+
+print(kezdes.kezdo_valasztas)
+
 print('Az aluljáró előtt meglátod egyik ismerősödet, Csabikát, aki az búcsúban lőtt JBL-én hallgatja a muzsikát. Mit teszel?')
 1 == print('Megpróbálod elkerülni.')
 2 == print('Odamész.')
