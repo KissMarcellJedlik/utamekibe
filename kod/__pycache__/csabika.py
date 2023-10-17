@@ -1,6 +1,3 @@
-import kezdes
-
-print(kezdes.kezdo_valasztas)
 
 def csabikaevent():
     csabika_szeret = False
@@ -26,9 +23,13 @@ def csabikaevent():
         if valasztas == 1:
             print('Lehúzod')
         if valasztas == 2:
-            print('Kérsz tőle kaját')
+            print('"1 - Jajj Csabusom, egy túrós batyuval dobjál mán meg "')
+            print('"2 - Nincs ételed te fattyú??"')
+            valasztas = int(input('Választás: '))
+            if valasztas == 1 or 2:
+                print(f'Adott egy sült patkány combot, de lehúzott 200Ft-tal (Éhség + 30%)')
         if valasztas == 3:
-            print('Beszólsz neki, hogy hallgasson valami normális nótát')
+            print('Nagyot nevetett rajta')
         if valasztas == 4:
             print('"Köszönöm szép testvérem, ígérem ezt nem fogom elfelejteni"')
             csabika_szeret = True
