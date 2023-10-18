@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-18T09:31:51.584Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="qONt15RiRtGkQH0HrSMU" version="22.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-18T09:34:10.645Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="_KdUzIRWWBvWviExIfxf" version="22.0.4" type="github">
   <diagram name="1 oldal" id="gjOM7e6wO8diRWeVtiza">
     <mxGraphModel dx="2206" dy="5896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -346,10 +346,7 @@
         <mxCell id="A1ZuuhthlVVNKibYsWye-22" value="A bácsi mérges lett, homloklebenyen rúgott és elvette az összes pénzed!" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1280" y="-1020" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="A1ZuuhthlVVNKibYsWye-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="A1ZuuhthlVVNKibYsWye-24" target="A1ZuuhthlVVNKibYsWye-30" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="A1ZuuhthlVVNKibYsWye-24" value="Nem volt nálad elég pénz, ezért nyakszirten vágott és összecsuklottál, mint egy napozóágy. Ezután lenyúlta a maradék pénzed." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+        <mxCell id="A1ZuuhthlVVNKibYsWye-24" value="Megveszed a parfümöt" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1820" y="-1020" width="300" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A1ZuuhthlVVNKibYsWye-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="A1ZuuhthlVVNKibYsWye-26" target="A1ZuuhthlVVNKibYsWye-36" edge="1">
@@ -363,9 +360,6 @@
         </mxCell>
         <mxCell id="A1ZuuhthlVVNKibYsWye-28" value="&quot;Itt egy ötszázas csak ne kerülj többet a szemem elé te csúf makákó!&quot;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1625" y="-1140" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="A1ZuuhthlVVNKibYsWye-30" value="Vesztettél!" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1910" y="-880" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A1ZuuhthlVVNKibYsWye-32" value="Vesztettél!" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1280" y="-880" width="120" height="60" as="geometry" />
@@ -432,7 +426,7 @@
         <mxCell id="A1ZuuhthlVVNKibYsWye-52" value="Ezt meglátták a városrendészek, és bevittek" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1490" y="-170" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="A1ZuuhthlVVNKibYsWye-54" value="Vesztettél!" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+        <mxCell id="A1ZuuhthlVVNKibYsWye-54" value="Lefújod őket parfümmel, ha van" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1490" y="-30" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A1ZuuhthlVVNKibYsWye-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="A1ZuuhthlVVNKibYsWye-56" target="A1ZuuhthlVVNKibYsWye-58" edge="1">
