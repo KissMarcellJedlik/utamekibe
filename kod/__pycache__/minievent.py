@@ -18,11 +18,13 @@ def szazasevent():
             if randint(1,5) == 1:    
                 felvetted = False
             if felvetted == False:
+                penz -500
                 print("Lakatos Ricárdó mögötted terem, megver(-500 Ft)")
-                print(f"Pénzed: {penz-500}Ft")
+                print(f"Pénzed: {penz}Ft")
             else: 
+                penz +100
                 print("Felvetted a százast(+100 Ft)")
-                print(f"Pénzed: {penz+100}Ft")
+                print(f"Pénzed: {penz}Ft")
     else: 
         print("Haladsz a kijárat felé, meglátod a kis abct")
 szazasevent()
