@@ -25,6 +25,8 @@ def szazasevent():
                 penz +100
                 print("Felvetted a százast(+100 Ft)")
                 print(f"Pénzed: {penz}Ft")
+        elif valaszt1 == 2:
+            print("Haladsz a kijárat felé, meglátod a kis abct")
     else: 
         print("Haladsz a kijárat felé, meglátod a kis abct")
 szazasevent()
