@@ -16,7 +16,6 @@ def kezdoszoveg():
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     input("Nyomj entert a folytatáshoz!")
     
-kezdoszoveg()
 
 
 def kezdo_valasztas():    
@@ -32,8 +31,10 @@ def kezdo_valasztas():
             
     elif valaszt1 == 2:
         print("Elindultál a híd irányába, de azt látod, hogy a híd felújítás miatt le van zárva, ezért kénytelen voltál aluljárónak menni.")
-        
-kezdo_valasztas()    
+
+if __name__ == "__main__":
+    kezdoszoveg()
+    kezdo_valasztas()    
 
 
     
