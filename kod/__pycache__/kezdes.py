@@ -22,8 +22,10 @@ kezdoszoveg()
 def kezdo_valasztas():    
     print("Az orrodat megcsavarja az égett benzinből áradó füst, amely a buszok kipufogójából ered, a füled pedig brazilmagyarok ordibálásától cseng.")
     print("Gondold meg mely útvonalon próbálsz szerencsét!")
+    print("━━━━━━━━━━━━━━━━━━━━━━━")
     print(f"{1} - Aluljáró")
     print(f"{2} - Baross Gábor híd")
+    print("━━━━━━━━━━━━━━━━━━━━━━━")
     valaszt1 = int(input("Választás: "))
     if valaszt1 == 1:
         print('')

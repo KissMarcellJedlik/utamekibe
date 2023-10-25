@@ -12,8 +12,10 @@ def szazasevent():
         szazas = True
     if szazas == True:
         print("Megpillantasz egy százast a földön. Felveszed?")
+        print("━━━━━━━━━━━━━━━━━━━━━━━")
         print(f"{1} - igen")
         print(f"{2} - Nem")
+        print("━━━━━━━━━━━━━━━━━━━━━━━")
         valaszt1 = int(input("Választás: "))
         if valaszt1 == 1:
             if randint(1,5) == 1:    
