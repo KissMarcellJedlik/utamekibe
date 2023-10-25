@@ -1,6 +1,8 @@
 from kezdes import penz
 from random import randint
+
 def szazasevent():
+    global penz
     szazas = False
     felvetted = True
 
@@ -8,7 +10,6 @@ def szazasevent():
 
     if randint(1,3) == 1:
         szazas = True
-
     if szazas == True:
         print("Megpillantasz egy százast a földön. Felveszed?")
         print(f"{1} - igen")
@@ -18,11 +19,11 @@ def szazasevent():
             if randint(1,5) == 1:    
                 felvetted = False
             if felvetted == False:
-                penz -500
+                penz -= 500
                 print("Lakatos Ricárdó mögötted terem, megver(-500 Ft)")
                 print(f"Pénzed: {penz}Ft")
             else: 
-                penz +100
+                penz += 100
                 print("Felvetted a százast(+100 Ft)")
                 print(f"Pénzed: {penz}Ft")
         elif valaszt1 == 2:
