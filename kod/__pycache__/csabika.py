@@ -1,3 +1,5 @@
+from random import randint
+from kezdes import energia
 
 def csabikaevent():
     csabika_szeret = False
@@ -17,6 +19,12 @@ def csabikaevent():
         1 == print('1 - Lehúzod')
         2 == print('2 - Kérsz tőle kaját')
         3 == print('3 - Beszólsz neki, hogy hallgasson valami normális nótát')
+        randint(1,2)
+        if randint == 1:
+            energia - 15
+            print('Pofán vágott,(-15%)')
+        if randint == 2:
+            print('Nagyot nevetett rajta')
         4 == print('4 - Adsz neki egy százast')
         print("━━━━━━━━━━━━━━━━━━━━━━━")
         valasztas = int(input('Választás: '))

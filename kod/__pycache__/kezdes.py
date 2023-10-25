@@ -1,4 +1,3 @@
-from csabika import csabikaevent
 
 
 
@@ -20,13 +19,13 @@ def kezdo_valasztas():
     print("Energia: 100%")
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
 
-    while energia > 0:
+    if energia < 50 or penz < 500 or ehseg < 50:
         print("━━━━━━━━━━━━━━━━━━━━━━━")
         print(f"Energia: {energia} %")
         print(f"Éhség: {ehseg} %")
         print(f"Pénz: {penz} Ft")
         print("━━━━━━━━━━━━━━━━━━━━━━━")
-        break
+        
 
     print("Az orrodat megcsavarja az égett benzinből áradó füst, amely a buszok kipufogójából ered, a füled pedig brazilmagyarok ordibálásától cseng.")
     print("Gondold meg mely útvonalon próbálsz szerencsét!")
@@ -34,14 +33,13 @@ def kezdo_valasztas():
     print(f"{2} - Baross Gábor híd")
     valaszt1 = int(input("Választás: "))
     if valaszt1 == 1:
-        print(csabikaevent)
-       
+        print('')
+            
 
     elif valaszt1 == 2:
         print("Elindultál a híd irányába, de azt látod, hogy a híd felújítás miatt le van zárva, ezért kénytelen voltál aluljárónak menni.")
-        print(csabikaevent)
-     
-kezdo_valasztas()
+        
+kezdo_valasztas()    
 
-    
+
     
