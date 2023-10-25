@@ -1,10 +1,6 @@
-
-
-
 energia = 100
 ehseg = 75
 penz = 500
-
 
 def kezdo_valasztas():
 
@@ -18,6 +14,7 @@ def kezdo_valasztas():
     print("Éhség: 75 %")
     print("Energia: 100%")
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    input("Nyomj entert a folytatáshoz!")
 
     if energia < 50 or penz < 500 or ehseg < 50:
         print("━━━━━━━━━━━━━━━━━━━━━━━")
@@ -35,7 +32,6 @@ def kezdo_valasztas():
     if valaszt1 == 1:
         print('')
             
-
     elif valaszt1 == 2:
         print("Elindultál a híd irányába, de azt látod, hogy a híd felújítás miatt le van zárva, ezért kénytelen voltál aluljárónak menni.")
         
