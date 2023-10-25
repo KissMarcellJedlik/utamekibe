@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-25T07:08:10.131Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="G8hckYFiZEfGGWhHSbqN" version="22.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-25T08:28:19.677Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="xHqNo41yjgq6-J2PcgEq" version="22.0.7" type="github">
   <diagram name="1 oldal" id="gjOM7e6wO8diRWeVtiza">
-    <mxGraphModel dx="1434" dy="5471" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1793" dy="5669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -138,12 +138,14 @@
             <mxPoint x="710" y="-3520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eaBGvAUoTCd1ScwMtzOl-161" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eI0seqku75HwyaSV5OBJ-40" target="eaBGvAUoTCd1ScwMtzOl-147" edge="1">
+        <mxCell id="eaBGvAUoTCd1ScwMtzOl-161" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.142;entryY=0.975;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="eI0seqku75HwyaSV5OBJ-64" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="950" y="-3050" as="targetPoint" />
+            <mxPoint x="1420" y="-3060" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="940" y="-3110" />
+              <mxPoint x="897.5" y="-3150" />
+              <mxPoint x="1370" y="-3080" />
             </Array>
+            <mxPoint x="798.1451612903224" y="-3430" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="eI0seqku75HwyaSV5OBJ-40" value="&quot;Jáj mó, 150Ft-tal tudlak megáldani, de kotródj a szemem elől.&quot;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
@@ -277,7 +279,7 @@
         <mxCell id="A1ZuuhthlVVNKibYsWye-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="A1ZuuhthlVVNKibYsWye-1" target="A1ZuuhthlVVNKibYsWye-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CUcIam9u_VTtIWiymEvo-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A1ZuuhthlVVNKibYsWye-1" target="CUcIam9u_VTtIWiymEvo-8">
+        <mxCell id="CUcIam9u_VTtIWiymEvo-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="A1ZuuhthlVVNKibYsWye-1" target="CUcIam9u_VTtIWiymEvo-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="A1ZuuhthlVVNKibYsWye-1" value="Sikeresen kiértél az&amp;nbsp; aluljáróból, átkeltél a fehér-fekete felfestésen. Ezután a Városháza mentén meglátsz egy hobót, aki kiszúrt téged, kezében egy &quot;Kucci&quot; parfümmel." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
@@ -651,7 +653,7 @@
             <mxPoint x="1400" y="-1780" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CUcIam9u_VTtIWiymEvo-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jfBG-qEeaqnFrTGpLrWy-18" target="jfBG-qEeaqnFrTGpLrWy-22">
+        <mxCell id="CUcIam9u_VTtIWiymEvo-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="jfBG-qEeaqnFrTGpLrWy-18" target="jfBG-qEeaqnFrTGpLrWy-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jfBG-qEeaqnFrTGpLrWy-18" value="&quot;van parfümöd, ha van, adok egy ezrest&quot;&lt;br&gt;Eltradeled?" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -699,7 +701,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="CUcIam9u_VTtIWiymEvo-8" value="20% eséllyel: Elraboltak a hobók mert nem tetszett nekik a kisugárzásod, többet nem láttak. Újra kell kezdened a játékot" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="CUcIam9u_VTtIWiymEvo-8" value="20% eséllyel: Elraboltak a hobók mert nem tetszett nekik a kisugárzásod, többet nem láttak. Újra kell kezdened a játékot" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1890" y="-1605" width="220" height="60" as="geometry" />
         </mxCell>
       </root>
