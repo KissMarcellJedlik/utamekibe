@@ -3,6 +3,7 @@ from kezdes import energia
 
 def csabikaevent():
     csabika_szeret = False
+    pofanvagott = False
 
     print('Az aluljáró előtt meglátod egyik ismerősödet, Csabikát, aki az búcsúban lőtt JBL-én hallgatja a muzsikát. Mit teszel?')
     
@@ -19,31 +20,31 @@ def csabikaevent():
         1 == print('1 - Lehúzod')
         2 == print('2 - Kérsz tőle kaját')
         3 == print('3 - Beszólsz neki, hogy hallgasson valami normális nótát')
-        randint(1,2)
-        if randint == 1:
-            energia - 15
-            print('Pofán vágott,(-15%)')
-        if randint == 2:
-            print('Nagyot nevetett rajta')
         4 == print('4 - Adsz neki egy százast')
         print("━━━━━━━━━━━━━━━━━━━━━━━")
-        valasztas = int(input('Választás: '))
-        if valasztas == 1:
+        valasztas1 = int(input('Választás: '))
+        if valasztas1 == 1:
             print('1 - "Csabikám, halljak meg, aggyá mán egy öcsit."')
             print('2 - "Buszjegyre nem tudsz adni egy 200ast?"')
             print('3 - "Most azonnal pengessél ki egy Rákóczit!"')
-            valasztas = int(input('Választás: '))
-            if valasztas == 1 or 2 or 3:
+            valasztas3 = int(input('Választás: '))
+            if valasztas3 == 1 or 2 or 3:
                 print('"Jáj mó, 150Ft-tal tudlak megáldani, de kotródj a szemem elől."')
-        if valasztas == 2:
+        if valasztas1 == 2:
             print('1 - " Jajj Csabusom, egy túrós batyuval dobjál mán meg "')
             print('2 - " Nincs ételed te fattyú??"')
-            valasztas = int(input('Választás: '))
-            if valasztas == 1 or 2:
+            valasztas4 = int(input('Választás: '))
+            if valasztas4 == 1 or 2:
                 print(f'Adott egy sült patkány combot, de lehúzott 200Ft-tal (Éhség + 30%)')
-        if valasztas == 3:
-            print('Nagyot nevetett rajta')
-        if valasztas == 4:
+        if valasztas1 == 3:
+            if randint(1, 2) == 1:
+                    energia - 15
+                    print('Pofán vágott(-15%)')
+                    print(f'energiamennyiséged: {energia} %')
+                    pofanvagott = True
+            if pofanvagott == False:
+                print('Nagyot nevetett rajta')
+        if valasztas1 == 4:
             print('"Köszönöm szép testvérem, ígérem ezt nem fogom elfelejteni"')
             csabika_szeret = True
 csabikaevent()
