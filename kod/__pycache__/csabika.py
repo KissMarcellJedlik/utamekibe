@@ -2,6 +2,7 @@ from random import randint
 from kezdes import energia
 
 def csabikaevent():
+    global energia
     csabika_szeret = False
     pofanvagott = False
 
