@@ -41,7 +41,11 @@ def csabikaevent():
             print('2 - " Nincs ételed te fattyú??"')
             valasztas4 = int(input('Választás: '))
             if valasztas4 == 1 or 2:
-                print(f'Adott egy sült patkány combot, de lehúzott 200Ft-tal (Éhség + 30%)')
+                print(f'Adott egy sült patkány combot, de lehúzott 200Ft-tal')
+                ehseg += 30
+                penz -= 200
+                print(f"Bendőd: {ehseg}%")
+                print(f"Pénzed: {penz}Ft")
         if valasztas1 == 3:
             if randint(1, 2) == 1:
                     energia -= 15
