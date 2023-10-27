@@ -1,11 +1,15 @@
 import kezdes
 import csabika
 import minievent
+import kuccipafum
 
-kezdes.kezdoszoveg()
 
 kezdes.kezdo_valasztas()
-      
+    
 csabika.csabikaevent()
 
 minievent.szazasevent()
+
+kuccipafum.kucciparfum()
+
+

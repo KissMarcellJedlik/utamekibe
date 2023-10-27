@@ -1,8 +1,11 @@
 from random import randint
-from kezdes import energia
+from kezdes import energia, penz, ehseg
 
 def csabikaevent():
     global energia
+    global penz
+    global ehseg
+
     csabika_szeret = False
     pofanvagott = False
 
@@ -31,6 +34,8 @@ def csabikaevent():
             valasztas3 = int(input('Választás: '))
             if valasztas3 == 1 or 2 or 3:
                 print('"Jáj mó, 150Ft-tal tudlak megáldani, de kotródj a szemem elől."')
+                penz += 150
+                print(f"Pénzed: {penz}Ft")
         if valasztas1 == 2:
             print('1 - " Jajj Csabusom, egy túrós batyuval dobjál mán meg "')
             print('2 - " Nincs ételed te fattyú??"')
@@ -39,7 +44,7 @@ def csabikaevent():
                 print(f'Adott egy sült patkány combot, de lehúzott 200Ft-tal (Éhség + 30%)')
         if valasztas1 == 3:
             if randint(1, 2) == 1:
-                    energia - 15
+                    energia -= 15
                     print('Pofán vágott(-15%)')
                     print(f'energiamennyiséged: {energia} %')
                     pofanvagott = True
