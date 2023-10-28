@@ -2,13 +2,15 @@ import kezdes
 import csabika
 import minievent
 import kuccipafum
-
-
-kezdes.kezdo_valasztas()
+import bolt
     
+kezdes.kezdo_valasztas()
+
 csabika.csabikaevent()
 
 minievent.szazasevent()
+
+bolt.boltos_event()
 
 kuccipafum.kucciparfum()
 

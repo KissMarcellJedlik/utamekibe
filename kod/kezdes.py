@@ -1,9 +1,21 @@
+
+
+
 energia = 100
 ehseg = 75
 penz = 500
-if ehseg or energia < 0:
+if  energia <= 0:
     print('Vesztettél!')
     exit()
+if  energia <= 0:
+    print('Vesztettél!')
+    exit()
+if penz < 0:
+    print('Vesztettél!')
+    exit()
+
+
+    
 def kezdo_valasztas():    
 
     print("A főhősünk Ernesztó, megérkezett a hintód, leszálltál az autóbusz állomásnál, Győr pöcegödrébe (vidéki).")
@@ -34,9 +46,7 @@ def kezdo_valasztas():
         print("Elindultál a híd irányába, de azt látod, hogy a híd felújítás miatt le van zárva, ezért kénytelen voltál aluljárónak menni.")
 
 
-    
 
-kezdo_valasztas()    
 
 
     

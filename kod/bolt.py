@@ -58,7 +58,7 @@ def boltos_event():
         print("Kimentél")
 
 
-boltos_event()
+
 
 
 

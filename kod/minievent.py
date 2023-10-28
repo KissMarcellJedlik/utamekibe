@@ -32,4 +32,3 @@ def szazasevent():
             print("")
     else: 
         print("")
-szazasevent()

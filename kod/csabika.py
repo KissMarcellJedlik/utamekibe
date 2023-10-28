@@ -24,7 +24,7 @@ def csabikaevent():
         1 == print('1 - Lehúzod')
         2 == print('2 - Kérsz tőle kaját')
         3 == print('3 - Beszólsz neki, hogy hallgasson valami normális nótát')
-        4 == print('4 - Adsz neki egy százast')
+        4 == print('4 - Adsz neki egy ötszázast')
         print("━━━━━━━━━━━━━━━━━━━━━━━")
         valasztas1 = int(input('Választás: '))
         if valasztas1 == 1:
@@ -56,5 +56,6 @@ def csabikaevent():
                 print('Nagyot nevetett rajta')
         if valasztas1 == 4:
             print('"Köszönöm szép testvérem, ígérem ezt nem fogom elfelejteni"')
+            penz -= 500
+            print(f"Pénzed: {penz}Ft")
             csabika_szeret = True
-csabikaevent()
