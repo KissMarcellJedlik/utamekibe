@@ -22,14 +22,13 @@ def kucciparfum():
     if valasztas == 2:
         print('Morcos fejet vágott, de elfogadta és továbbállt')
     if valasztas == 3:
-        if randint(1,2) == 1: 
-            print('"Itt egy ötszázas csak ne kerülj többet a szemem elé te csúf makákó!"')
-            penz += 500
-            
-        makako == True
+        if randint(1, 2) == 1:
+                    print('"Itt egy ötszázas csak ne kerülj többet a szemem elé te csúf makákó!"')
+                    makako = True
         if makako == False:
                 print('"Itt van nesze csak kotródj innét"')
-    penz + 500   
+        penz += 500
+        print(f"Pénzed: {penz}Ft")
     if valasztas == 4:
         print('"Érdekelne"')
         parfum == True
