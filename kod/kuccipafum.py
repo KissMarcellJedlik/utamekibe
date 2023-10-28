@@ -2,8 +2,11 @@ from kezdes import penz, energia, ehseg
 from random import randint
 
 def kucciparfum():
-    global penz 
-    
+     
+    global energia
+    global penz
+    global ehseg
+
     parfum = False
     makako = False
     print ('Sikeresen kiértél az  aluljáróból, átkeltél a fehér-fekete felfestésen. Ezután a Városháza mentén meglátsz egy hobót, aki kiszúrt téged, kezében egy "Kucci" parfümmel.')

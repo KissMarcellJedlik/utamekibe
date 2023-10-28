@@ -57,7 +57,7 @@ def boltos_event():
             print("Nincs, menjél ki!")
         if valaszt2 == 4:
             print("Kimentél")
-boltos_event()    
+
 
 
 
