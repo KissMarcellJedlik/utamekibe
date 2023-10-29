@@ -1,12 +1,20 @@
 from random import randint
 from kezdes import energia, penz, ehseg
 
+csabika_szeret = False
+csabikautanipenz = penz
+def plusz150():
+    global penz
+    penz = penz + 150
+
+
 def csabikaevent():
     global energia
     global penz
     global ehseg
-
-    csabika_szeret = False
+    global csabika_szeret
+    
+    
     pofanvagott = False
 
     print('Az aluljáró előtt meglátod egyik ismerősödet, Csabikát, aki az búcsúban lőtt JBL-én hallgatja a muzsikát. Mit teszel?')
@@ -34,8 +42,9 @@ def csabikaevent():
             valasztas3 = int(input('Választás: '))
             if valasztas3 == 1 or 2 or 3:
                 print('"Jáj mó, 150Ft-tal tudlak megáldani, de kotródj a szemem elől."')
-                penz += 150
-                print(f"Pénzed: {penz}Ft")
+               
+            plusz150()
+            print(f"Pénzed: {penz}Ft")
         if valasztas1 == 2:
             print('1 - " Jajj Csabusom, egy túrós batyuval dobjál mán meg "')
             print('2 - " Nincs ételed te fattyú??"')
@@ -59,3 +68,9 @@ def csabikaevent():
             penz -= 500
             print(f"Pénzed: {penz}Ft")
             csabika_szeret = True
+
+        
+        
+        
+        
+    

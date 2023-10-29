@@ -1,6 +1,5 @@
+from csabika import csabika_szeret
 from kezdes import energia, penz, ehseg
-from csabika import csabikaevent
-
 def jatekvege():
 
     global energia
@@ -14,5 +13,5 @@ def jatekvege():
     if penz < 1400:
         print('Elértél a mekihez biztonságban, de nem volt elég pénzed.')
         print('Vesztettél!')
-    if penz > 1400 and csabika_szeret == True:
+    if penz < 1400 and csabika_szeret == True:
         print('Az étterem előtt meglátod Csabikát aki ígéretét betartva kiegészített téged.')

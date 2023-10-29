@@ -1,23 +1,27 @@
 
 
-
 energia = 100
 ehseg = 75
-penz = 500
-if  energia <= 0:
-    print('Vesztettél!')
-    exit()
-if  energia <= 0:
-    print('Vesztettél!')
-    exit()
-if penz < 0:
-    print('Vesztettél!')
-    exit()
-
-
+penz = 500  
     
-def kezdo_valasztas():    
+def kezdo_valasztas(): 
+    
 
+    global energia
+    global ehseg
+    global penz
+
+   
+
+    if  energia <= 0:
+            print('Vesztettél!')
+            exit()
+    if  energia <= 0:
+            print('Vesztettél!')
+            exit()
+    if penz < 0:
+        print('Vesztettél!')
+        exit()
     print("A főhősünk Ernesztó, megérkezett a hintód, leszálltál az autóbusz állomásnál, Győr pöcegödrébe (vidéki).")
     print("Éhes vagy, és nincs sok petákod (500Ft). Célod, hogy életben maradj és elzsalj a mekibe, ahol legyen elég jussod, hogy tudj magadnak vásárolni egy bejövős ajánlatot (1390Ft).")
     print("Próbálj meg sértetlen maradni, valamint ne kötözködj sokat a hobókkal!")

@@ -1,6 +1,5 @@
-from kezdes import penz, energia, ehseg
 from random import randint
-
+from kezdes import ehseg, energia, penz
 
 
 
@@ -10,7 +9,7 @@ def boltos_event():
     global penz
     global energia
     global ehseg
-
+    
     print("Haladsz a kijárat felé, meglátod a kis abct")
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     print(" 1 - Bemész mannáért")

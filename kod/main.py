@@ -5,6 +5,7 @@ import kuccipafum
 import bolt
 import Mecdanelds
 
+
 kezdes.kezdo_valasztas()
 
 csabika.csabikaevent()
