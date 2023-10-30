@@ -1,17 +1,11 @@
 
 
-energia = 100
 ehseg = 75
-penz = 500  
+energia = 100
+penz = 500
     
 def kezdo_valasztas(): 
-    
 
-    global energia
-    global ehseg
-    global penz
-
-   
 
     if  energia <= 0:
             print('Vesztettél!')

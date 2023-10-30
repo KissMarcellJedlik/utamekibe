@@ -1,5 +1,5 @@
 from csabika import csabika_szeret
-from kezdes import energia, penz, ehseg
+from kezdes import ehseg, energia, penz
 def jatekvege():
 
     global energia

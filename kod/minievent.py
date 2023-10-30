@@ -1,4 +1,4 @@
-from csabika import penz
+from kezdes import ehseg, energia, penz
 from random import randint
 
 def plusz100penz():

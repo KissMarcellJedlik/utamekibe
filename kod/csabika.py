@@ -1,8 +1,8 @@
 from random import randint
-from kezdes import energia, penz, ehseg
+from kezdes import ehseg, energia, penz
 
 csabika_szeret = False
-csabikautanipenz = penz
+
 def plusz150():
     global penz
     penz = penz + 150
@@ -69,8 +69,8 @@ def csabikaevent():
             print(f"Pénzed: {penz}Ft")
             csabika_szeret = True
 
-        
-        
+    csabikautanipenz = penz
+    print(csabikautanipenz)
         
         
     
