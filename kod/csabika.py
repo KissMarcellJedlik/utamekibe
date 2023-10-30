@@ -1,5 +1,5 @@
 from random import randint
-from kezdes import ehseg, energia, penz
+
 
 csabika_szeret = False
 
@@ -9,9 +9,10 @@ def plusz150():
 
 
 def csabikaevent():
-    global energia
+
+    
     global penz
-    global ehseg
+    
     global csabika_szeret
     
     

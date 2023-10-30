@@ -1,12 +1,12 @@
 from random import randint
-from csabika import csabikautanipenz, ehseg, energia
+from kezdes import energia, penz, ehseg
 
 
 
 def boltos_event():
     pultostetszik = False
 
-    global csabikautanipenz
+    global penz
     global energia
     global ehseg
     
@@ -40,18 +40,18 @@ def boltos_event():
                                     print(f"Energiád: {energia}%")
                         if valaszt3 == 2:
                                     print("Nem, és ráhívod a rendőrséget. Később kiderül egy hírhedt pedofil volt, ezért  a rendőrség 1500 Ft-ot ad neked.")
-                                    csabikautanipenz += 1500
-                                    print(f"Pénzed: {csabikautanipenz}Ft")
+                                    penz += 1500
+                                    print(f"Pénzed: {penz}Ft")
             if pultostetszik == False:
                             print("Takarodj a boltomból vagy hívom a fejeseket!")
         if valaszt2 == 2:
-            if csabikautanipenz < 250:
+            if penz < 250:
                 print("Nincs elég pénzed, elküldött.")
             else:
                 print("Megvetted, megetted")
                 ehseg += 40
-                csabikautanipenz -= 250
-                print(f"Pénzed: {csabikautanipenz}Ft, Éhségszint: {ehseg}%.")
+                penz -= 250
+                print(f"Pénzed: {penz}Ft, Éhségszint: {ehseg}%.")
         if valaszt2 == 3:
             print("Nincs, menjél ki!")
         if valaszt2 == 4:
