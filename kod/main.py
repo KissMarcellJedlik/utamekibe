@@ -1,5 +1,5 @@
 from random import randint
-
+from s3cr3tro4t3 import secret_route
 
 
 
@@ -11,26 +11,6 @@ folytat = False
 csabika_szeret = False
 boltos_neni = False
 
-print('Szereteeeed a kekszeeet?')
-int(input('Választás: '))
-    if valasztas == 1:
-     print()
-def boltos event csináld meg és teddd belee a fasom boltos_neni változoót
-def ujra_kezdes():
-    global boltos_neni
-   
-    print('Újrakezded?')
-    print('1 - Igen')
-    print('2 - Nem')
-    
-    
-    valasztas = int(input('Választás: '))
-    if valasztas == 1:
-        jatek()
-    if valasztas == 2:
-        exit()
-    if valasztas == 3:
-         print
 while  ehseg <= 0:
         print('Vesztettél!')
         exit()
@@ -56,7 +36,7 @@ def jatek():
     print("Energia: 100%")
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     input("Nyomj entert a folytatáshoz!")
-            
+    print('Remélem entert nyomtál mert legközelebb megfejjjelek')      
 
 
 
@@ -67,11 +47,13 @@ def jatek():
     print(" 2 - Baross Gábor híd")
     print("━━━━━━━━━━━━━━━━━━━━━━━")
     valaszt1 = int(input("Választás: "))
-    if valaszt1 == 1:
+    if valaszt1 != 1 or valaszt1 != 2:
+        valaszt1 = int(input('Egy vagy kettü gyökszi!'))   
+    if  valaszt1 == 1:
         print('')
-                    
     if valaszt1 == 2:
         print("Elindultál a híd irányába, de azt látod, hogy a híd felújítás miatt le van zárva, ezért kénytelen voltál aluljárónak menni.")
+               
 
     pofanvagott = False
 
@@ -185,7 +167,7 @@ def jatek():
                                     print("Lefekszel a pultos nővel, és kapsz tőle egy energiaitalt.")
                                     energia += 20
                                     print(f"Energiád: {energia}%")
-                                    boltos_neni == True
+                                    boltos_neni = True
                         if valaszt3 == 2:
                                     print("Nem, és ráhívod a rendőrséget. Később kiderül egy hírhedt pedofil volt, ezért  a rendőrség 1500 Ft-ot ad neked.")
                                     penz += 1500
@@ -249,8 +231,20 @@ def jatek():
         print('Vesztettél!')
     if penz < 1400 and csabika_szeret == True:
         print('Az étterem előtt meglátod Csabikát aki ígéretét betartva kiegészített téged.')
-     
-    ujra_kezdes()
+    print('Újrakezded?')
+    print('1 - Igen')
+    print('2 - Nem')
+    if boltos_neni == True:
+        print('s3cr3t ro4te')
+
+    valasztas = int(input('Választás: '))
+    if valasztas == 1:
+        jatek()
+    if valasztas == 2:
+        exit()
+    if valasztas == 3 and boltos_neni == True:
+        secret_route()
+    
 
 jatek()
 
