@@ -13,8 +13,12 @@ boltos_neni = False
 
 def Baross_hid():
     print('Elindultál a híd irányába, felügetsz a lépcsőn.')
-    
-
+    print('Szembejön veled a híres neves Gálik úr, és megszólít')
+    match randint(1,2):
+        case 1:
+            print('Van egy szál cigid lyani?')
+        case 2:
+            print('')
 def jatek():
     global energia
     global penz
