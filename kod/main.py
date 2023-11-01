@@ -12,7 +12,7 @@ csabika_szeret = False
 boltos_neni = False
 
 def Baross_hid():
-    print('FAROK')
+    print('Elindultál a híd irányába, felügetsz a lépcsőn.')
     
 
 def jatek():
