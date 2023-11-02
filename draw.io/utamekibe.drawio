@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-02T12:41:21.492Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="2ZyNzc05hiZ-hEM7Quv1" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-02T14:28:23.477Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="yOBM0-V0lqfjTYu1Oqty" version="22.0.8" type="github">
   <diagram name="1 oldal" id="gjOM7e6wO8diRWeVtiza">
     <mxGraphModel dx="1687" dy="5601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -812,10 +812,38 @@
         <mxCell id="xFF72bUd_hSEvZZGDsvH-22" value="A&amp;nbsp; hídon galoppolva szembejön veled 3 ütnivaló fiatalember.&lt;br&gt;Valahogy el kell menj mellettük, de elfoglalják az egész járdát. Mit teszel?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2950" y="-3910" width="130" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="xFF72bUd_hSEvZZGDsvH-23" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="xFF72bUd_hSEvZZGDsvH-22">
+        <mxCell id="xFF72bUd_hSEvZZGDsvH-23" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="xFF72bUd_hSEvZZGDsvH-24" target="xFF72bUd_hSEvZZGDsvH-22">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="2920" y="-3750" as="sourcePoint" />
             <mxPoint x="2510" y="-3870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xFF72bUd_hSEvZZGDsvH-24" value="Elmész&amp;nbsp; mellettük,&lt;br&gt;rálépve az úttestre" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2890" y="-3730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xFF72bUd_hSEvZZGDsvH-25" value="Egy 90 éves papi áthajt rajtad&lt;br&gt;Vesztettél" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2810" y="-3630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xFF72bUd_hSEvZZGDsvH-26" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="xFF72bUd_hSEvZZGDsvH-25" target="xFF72bUd_hSEvZZGDsvH-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2860" y="-3760" as="sourcePoint" />
+            <mxPoint x="2910" y="-3810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xFF72bUd_hSEvZZGDsvH-27" value="Sikeresen kikerülöd őket" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2980" y="-3630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xFF72bUd_hSEvZZGDsvH-28" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="xFF72bUd_hSEvZZGDsvH-27" target="xFF72bUd_hSEvZZGDsvH-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2860" y="-3760" as="sourcePoint" />
+            <mxPoint x="2910" y="-3810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xFF72bUd_hSEvZZGDsvH-29" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="xFF72bUd_hSEvZZGDsvH-14" target="xFF72bUd_hSEvZZGDsvH-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3010" y="-3390" as="sourcePoint" />
+            <mxPoint x="3120" y="-3620" as="targetPoint" />
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
       </root>
