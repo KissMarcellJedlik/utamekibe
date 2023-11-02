@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-02T12:18:20.069Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="oChYxHkRuSlZHIYx6q70" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-02T12:41:21.492Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="2ZyNzc05hiZ-hEM7Quv1" version="22.0.8" type="github">
   <diagram name="1 oldal" id="gjOM7e6wO8diRWeVtiza">
-    <mxGraphModel dx="1793" dy="5659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1687" dy="5601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -725,7 +725,7 @@
             <mxPoint x="2454.62" y="-3720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XENK1jpgHzBH2HOoDfxF-9" value="Adsz neki egy zacskó feherjét" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="XENK1jpgHzBH2HOoDfxF-9" value="Adsz&amp;nbsp; neki egy zacskó fehérjét" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="2624.62" y="-3760" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XENK1jpgHzBH2HOoDfxF-11" value="" style="endArrow=none;html=1;rounded=0;" parent="1" source="XENK1jpgHzBH2HOoDfxF-12" target="XENK1jpgHzBH2HOoDfxF-7" edge="1">
@@ -735,7 +735,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="XENK1jpgHzBH2HOoDfxF-12" value="Miután rájöttél kivel beszélsz, terrorodban az aluljáró felé veszed az irányt mégiscsak" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="2404.62" y="-3510" width="120" height="80" as="geometry" />
+          <mxGeometry x="2420" y="-3520" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xFF72bUd_hSEvZZGDsvH-1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="xFF72bUd_hSEvZZGDsvH-2" target="XENK1jpgHzBH2HOoDfxF-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -793,6 +793,30 @@
         </mxCell>
         <mxCell id="xFF72bUd_hSEvZZGDsvH-16" value="Gálik úr ledobott a hídról a sínekre, ahol megcsókoltad a kispiros mozdony kerekét&lt;br&gt;Vesztettél&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2020" y="-3650" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="xFF72bUd_hSEvZZGDsvH-17" value="Köszönöm szépen, megyek kigyúrom magam a dzsimbe&lt;br&gt;Markodba egy 500ast nyomott" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2654.62" y="-3570" width="115.38" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xFF72bUd_hSEvZZGDsvH-19" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="xFF72bUd_hSEvZZGDsvH-17" target="XENK1jpgHzBH2HOoDfxF-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2640" y="-3640" as="sourcePoint" />
+            <mxPoint x="2690" y="-3690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xFF72bUd_hSEvZZGDsvH-21" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="xFF72bUd_hSEvZZGDsvH-22" target="A1ZuuhthlVVNKibYsWye-76">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2930" y="-3940" as="sourcePoint" />
+            <mxPoint x="2955" y="-3990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xFF72bUd_hSEvZZGDsvH-22" value="A&amp;nbsp; hídon galoppolva szembejön veled 3 ütnivaló fiatalember.&lt;br&gt;Valahogy el kell menj mellettük, de elfoglalják az egész járdát. Mit teszel?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2950" y="-3910" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="xFF72bUd_hSEvZZGDsvH-23" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="xFF72bUd_hSEvZZGDsvH-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2920" y="-3750" as="sourcePoint" />
+            <mxPoint x="2510" y="-3870" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
