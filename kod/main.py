@@ -5,26 +5,350 @@ from s3cr3tro4t3 import secret_route
 
 
 ehseg = 75
-energia = 100
+energia = 75
 penz = 500
 folytat = False
 csabika_szeret = False
 boltos_neni = False
+haribo = False
+csabika_gyulol = False
 
 def Baross_hid():
-    print('Elindultál a híd irányába, felügetsz a lépcsőn.')
-    print('Szembejön veled a híres neves Gálik úr, és megszólít')
-    match randint(1,2):
-        case 1:
-            print('Van egy szál cigid lyani?')
-        case 2:
-            print('')
-def jatek():
+    global csabika_gyulol
+    global csabika_szeret
     global energia
     global penz
     global ehseg
-    global csabika_szeret
+    global haribo
+    global boltos_neni 
+    print('Elindultál a híd irányába, felügetsz a lépcsőn.')
+    match randint(1,4):
+        case 1:
+            match randint(1,2):
+                case 1:
+                    print('Szembejön veled a híres neves Gálik úr, és megszólít: ')
+                    print('Van egy szál cigid lyani?')
+                    print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    print('1 - Neked nincs véntrotty')
+                    print('2 - van még kettő a farzsebemben, szívjuk el együtt móni')
+                    print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    valaszt = int(input('Választás:'))
+                    match valaszt:
+                        case 1:
+                            print('Gálik úr ledobott a hídról a sínekre, ahol megcsókoltad a kispiros mozdony kerekét')
+                            print('Vesztettél!')
+                            exit()
+                        case 2:
+                            print('Gálik úr megköszönte a szívességet,kezet fogott veled és egy poklot illetve egy haribót nyomott a kacsódba ')
+                            energia += 30
+                            haribo = True
+                            print(f'Energiád:{energia} %')
+                case 2:
+                    print('Szembejön veled a híres neves Gálik úr.')
+                    print('A bácsi megbök, "Mit eszel te hogy ekkora vagy?"')
+                    print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    print('1 - Ne nyúlj hozzám te csövimen!')
+                    print('2 - Adsz  neki egy zacskó fehérjét')
+                    print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    valaszt1 = int(input('Választás:'))
+                    match valaszt1:
+                        case 1:
+                            print('Miután rájöttél kivel beszélsz, terrorodban az aluljáró felé veszed az irányt mégiscsak')
+                            aluljaro()
+                        case 2:
+                            print('"Köszönöm szépen, megyek kigyúrom magam a dzsimbe" markodba egy 500ast nyomott')
+                            penz += 500
+                            print(f'Pénzed:{penz} Ft')
+        case 2:
+            print('A  hídon galoppolva szembejön veled 3 ütnivaló fiatalember.')
+            print('Valahogy el kell menj mellettük, de elfoglalják az egész járdát.')
+            print('Mit teszel?')
+            print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+            print('1 - Elmész  mellettük, rálépve az úttestre')
+            print('2 - Szölsz nekik hogy menjenek alrébb')
+            print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+            valaszt2 = int(input('Választás: '))
+            match valaszt2:
+                case 1:
+                    match randint(1,2):
+                        case 1:
+                            print('Egy 90 éves papi áthajt rajtad')
+                            print('Vesztettél!')
+                            exit()
+                        case 2 :
+                            print('Sikeresen kikerülöd őket')
+                case 2:
+                    match randint(1,2):
+                        case 1:
+                            print('Jajj bocs tesó, alrébb állunk')
+                        case 2 :
+                            print('"Ki vagy  te itt hé" Megvernek')
+                            print('Megvernek')
+                            penz -= 500
+                            print(f'Pénzed:{penz} Ft')
+        case 3:
+            match randint(1,2):
+                case 1:
+                    print('Szembejön veled a híres neves Gálik úr, és megszólít: ')
+                    print('Van egy szál cigid lyani?')
+                    print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    print('1 - Neked nincs véntrotty')
+                    print('2 - van még kettő a farzsebemben, szívjuk el együtt móni')
+                    print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    valasz3 = int(input('Választás:'))
+                    match valasz3:
+                                case 1:
+                                    print('Gálik úr ledobott a hídról a sínekre, ahol megcsókoltad a kispiros mozdony kerekét')
+                                    print('Vesztettél!')
+                                    exit()
+                                case 2:
+                                    print('Gálik úr megköszönte a szívességet,kezet fogott veled és egy poklot illetve egy haribót nyomott a kacsódba ')
+                                    energia += 30
+                                    haribo = True
+                                    print(f'Energiád:{energia} %')
+                case 2:
+                    print('Szembejön veled a híres neves Gálik úr.')
+                    print('A bácsi megbök, "Mit eszel te hogy ekkora vagy?"')
+                    print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    print('1 - Ne nyúlj hozzám te csövimen!')
+                    print('2 - Adsz  neki egy zacskó fehérjét')
+                    print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    valaszt1 = int(input('Választás:'))
+                    match valaszt1:
+                        case 1:
+                            print('Miután rájöttél kivel beszélsz, terrorodban az aluljáró felé veszed az irányt mégiscsak')
+                            aluljaro()
+                        case 2:
+                            print('"Köszönöm szépen, megyek kigyúrom magam a dzsimbe" markodba egy 500ast nyomott')
+                            penz += 500
+                            print(f'Pénzed:{penz} Ft')
+        
+            print('A  hídon galoppolva szembejön veled 3 ütnivaló fiatalember.Valahogy el kell menj mellettük, de elfoglalják az egész járdát. Mit teszel?')
+            print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+            print('1 - Elmész  mellettük, rálépve az úttestre')
+            print('2 - Szölsz nekik hogy menjenek alrébb')
+            print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+            valaszt4 = int(input('Választás: '))
+            match valaszt4:
+                case 1:
+                    match randint(1,2):
+                        case 1:
+                            print('Egy 90 éves papi áthajt rajtad')
+                            print('Vesztettél!')
+                            exit()
+                        case 2 :
+                            print('Sikeresen kikerülöd őket')
+                case 2:
+                    match randint(1,2):
+                        case 1:
+                            print('Jajj bocs tesó, alrébb állunk')
+                        case 2 :
+                            print('"Ki vagy  te itt hé" Megvernek')
+                            print('Megvernek')
+                            penz -= 500
+                            print(f'Pénzed:{penz} Ft')
+        case 4:
+            print('A  hídon galoppolva szembejön veled 3 ütnivaló fiatalember.Valahogy el kell menj mellettük, de elfoglalják az egész járdát. Mit teszel?')
+            print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+            print('1 - Elmész  mellettük, rálépve az úttestre')
+            print('2 - Szölsz nekik hogy menjenek alrébb')
+            print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+            valaszt4 = int(input('Választás: '))
+            match valaszt4:
+                case 1:
+                    match randint(1,2):
+                        case 1:
+                            print('Egy 90 éves papi áthajt rajtad')
+                            print('Vesztettél!')
+                            exit()
+                        case 2 :
+                            print('Sikeresen kikerülöd őket')
+                case 2:
+                    match randint(1,2):
+                        case 1:
+                            print('Jajj bocs tesó, alrébb állunk')
+                        case 2 :
+                            print('"Ki vagy  te itt hé" Megvernek')
+                            print('Megvernek')
+                            penz -= 500
+                            print(f'Pénzed:{penz} Ft')
+            match randint(1,2):
+                case 1:                                
+                    print('Szembejön veled a híres neves Gálik úr, és megszólít: ')
+                    print('Van egy szál cigid lyani?')
+                    print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    print('1 - Neked nincs véntrotty')
+                    print('2 - van még kettő a farzsebemben, szívjuk el együtt móni')
+                    print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    valasz3 = int(input('Választás:'))
+                    match valasz3:
+                                case 1:
+                                    print('Gálik úr ledobott a hídról a sínekre, ahol megcsókoltad a kispiros mozdony kerekét')
+                                    print('Vesztettél!')
+                                    exit()
+                                case 2:
+                                    print('Gálik úr megköszönte a szívességet,kezet fogott veled és egy poklot illetve egy haribót nyomott a kacsódba ')
+                                    energia += 30
+                                    haribo = True
+                                    print(f'Energiád:{energia} %')
+                case 2:
+                    print('Szembejön veled a híres neves Gálik úr.')
+                    print('A bácsi megbök, "Mit eszel te hogy ekkora vagy?"')
+                    print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    print('1 - Ne nyúlj hozzám te csövimen!')
+                    print('2 - Adsz  neki egy zacskó fehérjét')
+                    print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    valaszt1 = int(input('Választás:'))
+                    match valaszt1:
+                        case 1:
+                            print('Miután rájöttél kivel beszélsz, terrorodban az aluljáró felé veszed az irányt mégiscsak')
+                            aluljaro()
+                        case 2:
+                            print('"Köszönöm szépen, megyek kigyúrom magam a dzsimbe" markodba egy 500ast nyomott')
+                            penz += 500
+                            print(f'Pénzed:{penz} Ft')
+    print('Továbbmentél.')
+    print('A Baross hídon átérve a városháza előtt megpillantasz átérve egy  táblát ami egy standon virít. Betérsz ide?')
+    print('"LAKATOS KASZINÓ"')
+    print(' Betérsz ide?')
+    print("━━━━━━━━━━━━━━━━━━━━━━━")
+    print(" 1 - igen")
+    print(" 2 - Nem")
+    print("━━━━━━━━━━━━━━━━━━━━━━━")
+    valaszt5 = int(input('Választás: '))
+    match valaszt5:
+        case 1:
+            
+            osszpenz = 0
+            print('Régi cimborád, Csabika üdvözöl."Mi szél hozott erre testvérem?"')
+            print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+            print('1 - Pörgetnék azon a csodakereken')
+            print('2 - Lekövérezed Csabika feleségét aki ott gubbaszt a sarokban')
+            print('3 - Csak beköszöntem')
+            print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+            valaszt6 = int(input('Választás: '))
+            match valaszt6:
+                case 1:
+                    db = int(input('"Mennyit mó?"'))
+                    for i in range(db):
+                        osszeg = randint(-500, 500)
+                        print(f'{i+1}. {osszeg} Ft')
+                        osszpenz += osszeg
+                    print(f'Összesen ennyit pörgettél: {osszpenz} Ft')
+                    penz += osszpenz
+                    print(f'Jelenlegi pénzed: {penz} Ft')
+                        
+                case 2:
+                    print('"Takarodj innen te átkozott"')
+                    print('Csabika mostantól az ősellenséged')
+                    csabika_gyulol = True 
+                
+    print('Továbbmentél.')
+    
+        
+    match randint(1,2):
+        case 1:
+            print('Találtál egy kétszázast, mire felnéztél, egy Adyvárosi lakótelepi szökevényt láttál meg.')
+            penz += 200
+            print(f'Pénzed:{penz} Ft')
+        case 2:
+            print('Megpillantottál egy Adyvárosi lakótelepi szökevényt.')
+            print('━━━━━━━━━━━━━━━━━━━━━━━━━━')  
+            print('1 - Megközelíted')
+            print('2 - Figyelmen kívül hagyod')
+            print('━━━━━━━━━━━━━━━━━━━━━━━━━━')  
+            valasztas = int(input('Választás: '))
+            match valasztas:
+                case 1:
+                    print('1 - "Aggyál mán egy kis pénzt, ne legyél irigy"')
+                    print('2 - Leosztasz neki egy parasztlengőt, mert nem tetszik a kiállása')
+                    valasztas1 = int(input('Választás: '))
+                    match valasztas1:
+                        case 1:
+                            if parfum == True:
+                                    match randint(1,2):
+                                        case 1:
+                                            print('"Látom nem vagy egy kobold ezért megszánlak."')
+                                            penz += 150
+                                        case 2:
+                                            print('"Látom minőségi tavaszias illatú pahfüm lóg ki a zsebedbű, add el egy ezresé" Eltradeled?')
+                                            print("━━━━━━━━━━━━━━━━━━━━━━━")
+                                            print('1 - Igen')
+                                            print('2 - Nem')
+                                            print("━━━━━━━━━━━━━━━━━━━━━━━")
+                                            valasztas2 = int(input('Választás: '))
+                                            match valasztas2:
+                                                case 1:
+                                                    parfum = False
+                                                    penz += 1000
+                                                case 2:
+                                                    print('"Akkor a szíved legyen szabadnapos"')
+                                                        
+                                                    
+                            if parfum == False:
+                                print('"Látom nem vagy egy kobold ezért megszánlak."')
+                                penz += 150
+                                    
+                        case 2:
+                            print('Ezt meglátták a városrendészek, és bevittek')
+                            if parfum == True:
+                                print('Lefújod őket parfümmel, és elfutsz')
+                            if parfum == False:
+                                print('Elkaptak és dutyiba zártak, ahol hajolgathatsz a szappanért')
+                                print('Vesztettél!')
+                                exit()
+    print('Továbbmentél.')
+
+    print('Továbbmentél majd probléma nélkül eljutottál a mekiig, az erős csontozatú emberek törzshelyére.')
+    if penz >= 1400:
+        print('Bementél a mekibe és kikérted a kajádat. Játék vége')
+    if penz < 1400 and csabika_szeret == False:
+        print('Elértél a mekihez biztonságban, de nem volt elég pénzed.')
+        print('Vesztettél!')
+    if penz < 1400 and csabika_szeret == True:
+        print('Az étterem előtt meglátod Csabikát aki ígéretét betartva kiegészített téged.')
+    if csabika_gyulol == True:
+        print('Csabika elrabol')
+    if csabika_gyulol == True and haribo == True:
+        print('Csabikát kiengeszteled egy haribóval')
+    print('Újrakezded?')
+    print("━━━━━━━━━━━━━━━━━━━━━━━")
+    print(" 1 - igen")
+    print(" 2 - Nem")
+    print("━━━━━━━━━━━━━━━━━━━━━━━")
+    if boltos_neni == True:
+        print('s3cr3t ro4te')
+
+    valasztas = int(input('Választás: '))
+    if valasztas == 1:
+        jatek()
+    if valasztas == 2:
+        exit()
+    if valasztas == 3 and boltos_neni == True:
+        secret_route()
+    print('Újrakezded?')
+    print("━━━━━━━━━━━━━━━━━━━━━━━")
+    print(" 1 - igen")
+    print(" 2 - Nem")
+    print("━━━━━━━━━━━━━━━━━━━━━━━")
+    if boltos_neni == True:
+        print('s3cr3t ro4te')
+
+    valasztas = int(input('Választás: '))
+    if valasztas == 1:
+        jatek()
+    if valasztas == 2:
+        exit()
+    if valasztas == 3 and boltos_neni == True:
+        secret_route()
+    
+def jatek():
+    global csabika_gyulol
     global boltos_neni
+    global csabika_szeret
+    global energia
+    global penz
+    global ehseg
     print("A főhősünk Ernesztó, megérkezett a hintód, leszálltál az autóbusz állomásnál, Győr pöcegödrébe (vidéki).")
     print("Éhes vagy, és nincs sok petákod (500Ft). Célod, hogy életben maradj és elzsalj a mekibe, ahol legyen elég jussod, hogy tudj magadnak vásárolni egy bejövős ajánlatot (1390Ft).")
     print("Próbálj meg sértetlen maradni, valamint ne kötözködj sokat a hobókkal!")
@@ -55,8 +379,16 @@ def jatek():
             if valaszt1 == 2:
                 Baross_hid()  
                 break
-    pofanvagott = False
+    aluljaro()
 
+def aluljaro():
+    global csabika_gyulol
+    global boltos_neni
+    global csabika_szeret
+    global energia
+    global penz
+    global ehseg
+    pofanvagott = False
     szazas = False
     felvetted = True
 
@@ -66,8 +398,8 @@ def jatek():
     if szazas == True:
         print("Megpillantasz egy százast a földön. Felveszed?")
         print("━━━━━━━━━━━━━━━━━━━━━━━")
-        print(f" 1 - igen")
-        print(f" 2 - Nem")
+        print(" 1 - igen")
+        print(" 2 - Nem")
         print("━━━━━━━━━━━━━━━━━━━━━━━")
         valaszt1 = int(input("Választás: "))
         if valaszt1 == 1:
@@ -126,7 +458,7 @@ def jatek():
         if valasztas1 == 3:
             if randint(1, 2) == 1:
                     energia -= 15
-                    print('Pofán vágott(-15%)')
+                    print('Pofán vágott a kajszibarackfejű')
                     print(f'energiamennyiséged: {energia} %')
                     pofanvagott = True
             if pofanvagott == False:
@@ -185,13 +517,16 @@ def jatek():
         print(" 2 - 5dkg parizert meg két zsemlyét szeretnék!")
         print(" 3 - Van valami ingyen?")
         print(" 4 - Szó nélkül kimész")
+        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
         valaszt2 = int(input("Választás: "))
         if valaszt2 == 1:
             if randint(1,2) == 1:
                         pultostetszik = True
+                        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
                         print("Tetszik a domináns hozzállásod, akarsz velem hancúrozni a pulton?")
                         print(f" 1 - Belemegyek, nincs mit vesztenem!")
                         print(f" 2 - Nem!")
+                        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
                         valaszt3 = int(input("Választás: "))
                         if valaszt3 == 1:
                                     print("Lefekszel a pultos nővel, és kapsz tőle egy energiaitalt.")
@@ -250,12 +585,12 @@ def jatek():
     makako = False
     print ('Sikeresen kiértél az  aluljáróból, átkeltél a fehér-fekete felfestésen. Ezután a Városháza mentén meglátsz egy hobót, aki kiszúrt téged, kezében egy "Kucci" parfümmel.')
     print ('"Szép napot honfitárs, szia uram, parfüm érdekel?"')
-    print("━━━━━━━━━━━━━━━━━━━━━━━")
+    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     print('1 - "Menjen innen maga hobó!!!"')
     print('2 - "Sajnálom uram de vágtázok hazafele"')
     print('3 - "Add ide a suskád, te hobó!"')
     print('4 - "Érdekelne"')
-    print("━━━━━━━━━━━━━━━━━━━━━━━")
+    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     valasztas = int(input('Választás: '))
     if valasztas == 1:
         print('A bácsi mérges lett, homloklebenyen rúgott és elvette az összes pénzed!')
@@ -288,8 +623,8 @@ def jatek():
     if szazas == True:
         print("Megpillantasz egy százast a földön. Felveszed?")
         print("━━━━━━━━━━━━━━━━━━━━━━━")
-        print(f" 1 - igen")
-        print(f" 2 - Nem")
+        print(" 1 - igen")
+        print(" 2 - Nem")
         print("━━━━━━━━━━━━━━━━━━━━━━━")
         valaszt1 = int(input("Választás: "))
         if valaszt1 == 1:
@@ -316,9 +651,11 @@ def jatek():
                     penz += 200
                     print(f'Pénzed:{penz} Ft')
                 case 2:
-                    print('Megpillantottál egy Adyvárosi lakótelepi szökevényt.')    
+                    print('Megpillantottál egy Adyvárosi lakótelepi szökevényt.')
+            print('━━━━━━━━━━━━━━━━━━━━━━━━━━')  
             print('1 - Megközelíted')
             print('2 - Figyelmen kívül hagyod')
+            print('━━━━━━━━━━━━━━━━━━━━━━━━━━')  
             valasztas = int(input('Választás: '))
             match valasztas:
                 case 1:
@@ -334,8 +671,10 @@ def jatek():
                                             penz += 150
                                         case 2:
                                             print('"Látom minőségi tavaszias illatú pahfüm lóg ki a zsebedbű, add el egy ezresé" Eltradeled?')
+                                            print("━━━━━━━━━━━━━━━━━━━━━━━")
                                             print('1 - Igen')
                                             print('2 - Nem')
+                                            print("━━━━━━━━━━━━━━━━━━━━━━━")
                                             valasztas2 = int(input('Választás: '))
                                             match valasztas2:
                                                 case 1:
@@ -360,8 +699,6 @@ def jatek():
     print('Továbbmentél.')
 
     print('Továbbmentél majd probléma nélkül eljutottál a mekiig, az erős csontozatú emberek törzshelyére.')
-    if boltos_neni == True:
-        print('s3cr3t ro4t3')
     if penz >= 1400:
         print('Bementél a mekibe és kikérted a kajádat. Játék vége')
     if penz < 1400 and csabika_szeret == False:
@@ -370,8 +707,10 @@ def jatek():
     if penz < 1400 and csabika_szeret == True:
         print('Az étterem előtt meglátod Csabikát aki ígéretét betartva kiegészített téged.')
     print('Újrakezded?')
-    print('1 - Igen')
-    print('2 - Nem')
+    print("━━━━━━━━━━━━━━━━━━━━━━━")
+    print(" 1 - igen")
+    print(" 2 - Nem")
+    print("━━━━━━━━━━━━━━━━━━━━━━━")
     if boltos_neni == True:
         print('s3cr3t ro4te')
 
@@ -385,8 +724,3 @@ def jatek():
     
 
 jatek()
-
-
-
-
-
