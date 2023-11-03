@@ -21,7 +21,7 @@ def kucciparfum():
     if valasztas == 1:
         print('A bácsi mérges lett, homloklebenyen rúgott és elvette az összes pénzed!')
         print('Vesztettél!')
-        exit()
+        )
     if valasztas == 2:
         print('Morcos fejet vágott, de elfogadta és továbbállt')
     if valasztas == 3:

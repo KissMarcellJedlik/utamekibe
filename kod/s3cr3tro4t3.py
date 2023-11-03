@@ -1,6 +1,6 @@
 def secret_route():
 
-    print('FASZ')
+    print('Tatabányára mész és eggyéválsz a turulmadárral, Tatabánya védelmezője leszel, aka Tbánya crusader')
 
 
 
