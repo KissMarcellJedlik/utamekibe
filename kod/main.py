@@ -90,7 +90,7 @@ def Baross_hid():
             print('Mit teszel?')
             print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
             print('1 - Elmész  mellettük, rálépve az úttestre')
-            print('2 - Szölsz nekik hogy menjenek alrébb')
+            print('2 - Szólsz nekik hogy menjenek alrébb')
             print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
             valaszt2 = int(input('Választás: '))
             match valaszt2:
@@ -335,6 +335,7 @@ def Baross_hid():
         print('Vesztettél!')
     if penz < 1400 and csabika_szeret == True:
         print('Az étterem előtt meglátod Csabikát aki ígéretét betartva kiegészített téged.')
+        print("Nyertél!")
     if csabika_gyulol == True:
         print('A meki előtt Csabika elkap egy zsákba tesz, nehéz köveket köt rád, és belehajít a Dunába.')
         print('Vesztettél!')
@@ -373,7 +374,7 @@ def jatek():
     valaszt = int(input("Választás: "))
              
     while valaszt != 1 or valaszt != 2:
-            valaszt1 = int(input('BIztOoOOs nem a másik irányt választod?'))
+            valaszt1 = int(input('BIztOoOOs nem a másik irányt választod(1 - Aluljáró, 2 - Baross Gábor híd)?'))
             if  valaszt1 == 1:
                 print('')
                 break
@@ -404,7 +405,11 @@ def aluljaro():
         print("━━━━━━━━━━━━━━━━━━━━━━━")
         valaszt1 = int(input("Választás: "))
         if valaszt1 == 1:
-            if randint(1,2) == 1:    
+            ehseg -= 5
+            energia -= 5
+            print(f"Bendőd: {ehseg}%")
+            print(f"Energiamennyiséged: {energia}%")      
+            if randint(1,4) == 1:   
                 felvetted = False
             if felvetted == False:
                 penz -= 500
@@ -418,6 +423,10 @@ def aluljaro():
             print("")
     else: 
         print("")
+    
+
+
+        
 
     print('Az aluljáró előtt meglátod egyik ismerősödet, Csabikát, aki az búcsúban lőtt JBL-én hallgatja a muzsikát. Mit teszel?')
             
@@ -428,6 +437,10 @@ def aluljaro():
     valasztas = int(input('Választás: '))
     if valasztas == 1:
         print('Odaköszönt neked, de nem foglalkoztál vele. Később ezt lehet megbánod')
+        energia -= 5
+        ehseg -= 5
+        print(f"Bendőd: {ehseg}%")
+        print(f"Energiamennyiséged: {energia}%")      
 
     if valasztas == 2:
         print("━━━━━━━━━━━━━━━━━━━━━━━")
@@ -460,7 +473,7 @@ def aluljaro():
             if randint(1, 2) == 1:
                     energia -= 15
                     print('Pofán vágott a kajszibarackfejű')
-                    print(f'energiamennyiséged: {energia} %')
+                    print(f'Energiamennyiséged: {energia} %')
                     pofanvagott = True
             if pofanvagott == False:
                  print('Nagyot nevetett rajta')
@@ -469,6 +482,12 @@ def aluljaro():
             penz -= 500
             print(f"Pénzed: {penz}Ft")
             csabika_szeret = True
+    
+        energia -= 5
+        ehseg -= 5
+        print(f"Bendőd: {ehseg}%")
+        print(f"Energiamennyiséged: {energia}%")      
+        
 
     szazas = False
     felvetted = True
@@ -484,7 +503,11 @@ def aluljaro():
         print("━━━━━━━━━━━━━━━━━━━━━━━")
         valaszt1 = int(input("Választás: "))
         if valaszt1 == 1:
-            if randint(1,2) == 1:    
+            ehseg -= 5
+            energia -= 5
+            print(f"Bendőd: {ehseg}%")
+            print(f"Energiamennyiséged: {energia}%")      
+            if randint(1,4) == 1:   
                 felvetted = False
             if felvetted == False:
                 penz -= 500
@@ -518,6 +541,7 @@ def aluljaro():
         print(" 2 - 5dkg parizert meg két zsemlyét szeretnék!")
         print(" 3 - Van valami ingyen?")
         print(" 4 - Szó nélkül kimész")
+        print(" 5 - pörgessél ki egy energitalt! ")
         print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
         valaszt2 = int(input("Választás: "))
         if valaszt2 == 1:
@@ -552,6 +576,15 @@ def aluljaro():
             print("Nincs, menjél ki!")
         if valaszt2 == 4:
             print("Kimentél")
+        if valaszt2 == 5 and penz > 200:
+            print("'200 Forint lesz!'")
+            penz -= 250
+            energia += 20
+            print(f"Energiád: {energia}%")
+            print(f"Pénzed: {penz}Ft")
+        else:
+             print("Nem volt elég pénzed")
+
     
     szazas = False
     felvetted = True
@@ -567,7 +600,11 @@ def aluljaro():
         print("━━━━━━━━━━━━━━━━━━━━━━━")
         valaszt1 = int(input("Választás: "))
         if valaszt1 == 1:
-            if randint(1,2) == 1:    
+            ehseg -= 5
+            energia -= 5
+            print(f"Bendőd: {ehseg}%")
+            print(f"Energiamennyiséged: {energia}%")  
+            if randint(1,4) == 1:   
                 felvetted = False
             if felvetted == False:
                 penz -= 500
@@ -629,7 +666,11 @@ def aluljaro():
         print("━━━━━━━━━━━━━━━━━━━━━━━")
         valaszt1 = int(input("Választás: "))
         if valaszt1 == 1:
-            if randint(1,2) == 1:    
+            ehseg -= 5
+            energia -= 5
+            print(f"Bendőd: {ehseg}%")
+            print(f"Energiamennyiséged: {energia}%")  
+            if randint(1,4) == 1:   
                 felvetted = False
             if felvetted == False:
                 penz -= 500
@@ -700,15 +741,17 @@ def aluljaro():
                                 print('Elkaptak és dutyiba zártak, ahol hajolgathatsz a szappanért')
                                 print('Vesztettél!')
                                 ujrakezdes()
-    print('Továbbmentél.')
 
     print('Továbbmentél majd probléma nélkül eljutottál a mekiig, az erős csontozatú emberek törzshelyére.')
     if penz >= 1400:
         print('Bementél a mekibe és kikérted a kajádat.')
+        print("Nyertél!")
     if penz < 1400 and csabika_szeret == False:
         print('Elértél a mekihez biztonságban, de nem volt elég pénzed.')
+        print("Vesztettél!")
     if penz < 1400 and csabika_szeret == True:
         print('Az étterem előtt meglátod Csabikát aki ígéretét betartva kiegészített téged.')
+        print("Nyertél!")
     if csabika_gyulol == True:
         print('A meki előtt Csabika elkap egy zsákba tesz, nehéz köveket köt rád, és belehajít a Dunába.')
         print('Vesztettél!')
