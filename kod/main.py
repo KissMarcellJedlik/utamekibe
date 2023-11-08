@@ -61,7 +61,17 @@ def Baross_hid():
                     print('1 - Neked nincs véntrotty')
                     print('2 - van még kettő a farzsebemben, szívjuk el együtt móni')
                     print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
-                    valaszt = int(input('Választás:'))
+                    while True:
+                        try:
+                            valaszt = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
                     match valaszt:
                         case 1:
                             print('Gálik úr ledobott a hídról a sínekre, ahol megcsókoltad a kispiros mozdony kerekét')
@@ -288,7 +298,14 @@ def Baross_hid():
     print('1 - Megközelíted')
     print('2 - Figyelmen kívül hagyod')
     print('━━━━━━━━━━━━━━━━━━━━━━━━━━')  
-    valasztas = int(input('Választás: '))
+    while True:
+        try:
+            valasztas = int(input('Választás: '))
+        except ValueError:
+            print("Jó választ adjááá  te csicskalángos.")
+            continue
+        else:
+            break
     match valasztas:
         case 1:
             print('1 - "Aggyál mán egy kis pénzt, ne legyél irigy"')
@@ -415,7 +432,7 @@ def aluljaro():
             ehseg -= 5
             energia -= 5
             print(f"Bendőd: {ehseg}%")
-            print(f"Energiamennyiséged: {energia}%")      
+            print(f"Energiád: {energia}%")      
             if randint(1,4) == 1:   
                 felvetted = False
             if felvetted == False:
@@ -447,7 +464,7 @@ def aluljaro():
         energia -= 5
         ehseg -= 5
         print(f"Bendőd: {ehseg}%")
-        print(f"Energiamennyiséged: {energia}%")      
+        print(f"Energiád: {energia}%")      
 
     if valasztas == 2:
         print("━━━━━━━━━━━━━━━━━━━━━━━")
@@ -465,7 +482,6 @@ def aluljaro():
             if valasztas3 == 1 or 2 or 3:
                 print('"Jáj mó, 150Ft-tal tudlak megáldani, de kotródj a szemem elől."')    
                 penz += 150
-                print(f"Pénzed: {penz}Ft")
         if valasztas1 == 2:
             print('1 - " Jajj Csabusom, egy túrós batyuval dobjál mán meg "')
             print('2 - " Nincs ételed te fattyú??"')
@@ -481,8 +497,7 @@ def aluljaro():
         if valasztas1 == 3:
             if randint(1, 2) == 1:
                     energia -= 15
-                    print('Pofán vágott a kajszibarackfejű')
-                    print(f'Energiamennyiséged: {energia} %')
+                    print('Pofán vágott a kajszibarackfejű')            
                     pofanvagott = True
             if pofanvagott == False:
                 print('Nagyot nevetett rajta')
@@ -498,7 +513,7 @@ def aluljaro():
         energia -= 5
         ehseg -= 5
         print(f"Bendőd: {ehseg}%")
-        print(f"Energiamennyiséged: {energia}%")      
+        print(f"Energiád: {energia}%")      
         
 
     szazas = False
@@ -518,7 +533,7 @@ def aluljaro():
             ehseg -= 5
             energia -= 5
             print(f"Bendőd: {ehseg}%")
-            print(f"Energiamennyiséged: {energia}%")      
+            print(f"Energiád: {energia}%")      
             if randint(1,4) == 1:   
                 felvetted = False
             if felvetted == False:
@@ -615,7 +630,7 @@ def aluljaro():
             ehseg -= 5
             energia -= 5
             print(f"Bendőd: {ehseg}%")
-            print(f"Energiamennyiséged: {energia}%")  
+            print(f"Energiád: {energia}%")  
             if randint(1,4) == 1:   
                 felvetted = False
             if felvetted == False:
@@ -689,7 +704,7 @@ def aluljaro():
             ehseg -= 5
             energia -= 5
             print(f"Bendőd: {ehseg}%")
-            print(f"Energiamennyiséged: {energia}%")  
+            print(f"Energiád: {energia}%")  
             if randint(1,4) == 1:   
                 felvetted = False
             if felvetted == False:

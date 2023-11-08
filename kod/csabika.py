@@ -60,7 +60,7 @@ def csabikaevent():
             if randint(1, 2) == 1:
                     energia -= 15
                     print('Pofán vágott(-15%)')
-                    print(f'energiamennyiséged: {energia} %')
+                    print(f'Energiád: {energia} %')
                     pofanvagott = True
             if pofanvagott == False:
                 print('Nagyot nevetett rajta')
