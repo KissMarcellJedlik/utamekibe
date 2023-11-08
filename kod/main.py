@@ -13,6 +13,10 @@ boltos_neni = False
 haribo = False
 csabika_gyulol = False
 parfum = False
+if penz <= 0:
+    penz == 0
+if energia >= 100:
+    energia == 100
 def ujrakezdes():
     global penz
     global energia
@@ -214,8 +218,10 @@ def Baross_hid():
                                 case 2:
                                     print('Gálik úr megköszönte a szívességet,kezet fogott veled és egy poklot illetve egy haribót nyomott a kacsódba ')
                                     energia += 30
+                                    ehseg += 5
                                     haribo = True
                                     print(f'Energiád:{energia} %')
+                                    print(f"Bendőd: {ehseg}")
                 case 2:
                     print('Szembejön veled a híres neves Gálik úr.')
                     print('A bácsi megbök, "Mit eszel te hogy ekkora vagy?"')
@@ -254,7 +260,7 @@ def Baross_hid():
             valaszt6 = int(input('Választás: '))
             match valaszt6:
                 case 1:
-                    db = int(input('"Mennyit mó?"'))
+                    db = int(input('"Mennyiszer szeretnél pörgetni (majd a sors eldönti a szerencsédet)?"'))
                     for i in range(db):
                         osszeg = randint(-500, 500)
                         print(f'{i+1}. {osszeg} Ft')
@@ -329,7 +335,8 @@ def Baross_hid():
 
     print('Továbbmentél majd probléma nélkül eljutottál a mekiig, az erős csontozatú emberek törzshelyére.')
     if penz >= 1400:
-        print('Bementél a mekibe és kikérted a kajádat. Játék vége')
+        print('Bementél a mekibe és kikérted a kajádat.')
+        print("Nyertél!")
     if penz < 1400 and csabika_szeret == False:
         print('Elértél a mekihez biztonságban, de nem volt elég pénzed.')
         print('Vesztettél!')
@@ -467,8 +474,10 @@ def aluljaro():
                 print(f'Adott egy sült patkány combot, de lehúzott 200Ft-tal')
                 ehseg += 30
                 penz -= 200
-                print(f"Bendőd: {ehseg}%")
-                print(f"Pénzed: {penz}Ft")
+            if valasztas4 == 1 or 2 and penz >= 200:
+                print('"Nem adok neked semmit, még egy kétszázas sincs nálad!"')
+            print(f"Bendőd: {ehseg}%")
+            print(f"Pénzed: {penz}Ft")
         if valasztas1 == 3:
             if randint(1, 2) == 1:
                     energia -= 15
@@ -476,12 +485,15 @@ def aluljaro():
                     print(f'Energiamennyiséged: {energia} %')
                     pofanvagott = True
             if pofanvagott == False:
-                 print('Nagyot nevetett rajta')
+                print('Nagyot nevetett rajta')
         if valasztas1 == 4:
-            print('"Köszönöm szép testvérem, ígérem ezt nem fogom elfelejteni"')
-            penz -= 500
-            print(f"Pénzed: {penz}Ft")
-            csabika_szeret = True
+            if penz >= 500:
+                print('"Köszönöm szép testvérem, ígérem ezt nem fogom elfelejteni"')
+                penz -= 500
+                csabika_szeret = True
+            elif penz < 500:
+                print('"Nincs is nálad annyi, kotródj a szemem elől!"')
+        print(f"Pénzed: {penz}Ft")
     
         energia -= 5
         ehseg -= 5
@@ -576,14 +588,14 @@ def aluljaro():
             print("Nincs, menjél ki!")
         if valaszt2 == 4:
             print("Kimentél")
-        if valaszt2 == 5 and penz > 200:
+        if valaszt2 == 5 and penz > 250:
             print("'200 Forint lesz!'")
             penz -= 250
             energia += 20
             print(f"Energiád: {energia}%")
             print(f"Pénzed: {penz}Ft")
-        else:
-             print("Nem volt elég pénzed")
+        if valaszt2 == 5 and penz < 250:
+            print("Nem volt elég pénzed")
 
     
     szazas = False
@@ -646,10 +658,18 @@ def aluljaro():
         print(f"Pénzed: {penz}Ft")
     if valasztas == 4:
         print('"Érdekelne"')
-        parfum == True
-        penz - 500
+        if penz >= 500:    
+            parfum == True
+            penz - 500
+            print('Megveszed a parfümöt')
+        elif penz < 500:
+            print('"Nincs is nálad annyi, át akarsz verni engem te hegyi parizer??"')
         print(f'Pénzed:{penz} Ft')
-        print('Megveszed a parfümöt')
+        print("Továbbmnetél")
+    energia -= 10
+    ehseg -=10
+    print(f"Energia: {energia}%")
+    print(f"Bendőd: {ehseg}%")
     print('Ezután átkeltél mégegy zebrán, eddig nem ért veszély forrás eme görönyös úton! Megérkeztél a Baross út elejére.')
 
     szazas = False
