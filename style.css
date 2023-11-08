@@ -16,6 +16,8 @@ body
 {
     background: #000;
     min-height: 200vh;
+    color: white;
+    
 }
 header
 {
@@ -91,6 +93,12 @@ header.sticky ul li a
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#kep{
+    width: 400px;
+}
+.fixed-bottom{
+    float: right;
 }
 
 
