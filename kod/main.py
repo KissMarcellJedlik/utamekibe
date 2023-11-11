@@ -493,7 +493,7 @@ def aluljaro():
 
         
 
-    print('Az aluljáró előtt meglátod egyik ismerősödet, Csabikát, aki az búcsúban lőtt JBL-én hallgatja a muzsikát. Mit teszel?')
+    print('Az aluljáró előtt meglátod egyik ismerősödet, Csabikát, aki a búcsúban lőtt JBL-én hallgatja a muzsikát. Mit teszel?')
             
     print("━━━━━━━━━━━━━━━━━━━━━━━")
     print('1 - Megpróbálod elkerülni.')
@@ -538,11 +538,12 @@ def aluljaro():
             print('2 - " Nincs ételed te fattyú??"')
             valasztas4 = int(input('Választás: '))
             if valasztas4 == 1 or 2:
-                print(f'Adott egy sült patkány combot, de lehúzott 200Ft-tal')
-                ehseg += 30
-                penz -= 200
-            if valasztas4 == 1 or 2 and penz >= 200:
-                print('"Nem adok neked semmit, még egy kétszázas sincs nálad!"')
+                if penz >= 200:
+                    print(f'Adott egy sült patkány combot, de lehúzott 200Ft-tal')
+                    ehseg += 30
+                    penz -= 200
+                elif penz < 200:
+                    print('"Nem adok neked semmit, még egy kétszázas sincs nálad!"')
             print(f"Bendőd: {ehseg}%")
             print(f"Pénzed: {penz}Ft")
         if valasztas1 == 3:
@@ -559,11 +560,10 @@ def aluljaro():
                 csabika_szeret = True
             elif penz < 500:
                 print('"Nincs is nálad annyi, kotródj a szemem elől!"')
-        print(f"Pénzed: {penz}Ft")
+            print(f"Pénzed: {penz}Ft")
     
         energia -= 5
         ehseg -= 5
-        print(f"Bendőd: {ehseg}%")
         print(f"Energiád: {energia}%")      
         
 
@@ -736,7 +736,7 @@ def aluljaro():
     ehseg -=10
     print(f"Energia: {energia}%")
     print(f"Bendőd: {ehseg}%")
-    print('Ezután átkeltél mégegy zebrán, eddig nem ért veszély forrás eme görönyös úton! Megérkeztél a Baross út elejére.')
+    print('Ezután átkeltél mégegy zebrán, eddig nem ért veszély forrás eme göröngyös úton! Megérkeztél a Baross út elejére.')
 
     szazas = False
     felvetted = True
