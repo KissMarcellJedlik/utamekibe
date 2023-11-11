@@ -1,9 +1,5 @@
-import os
 from random import randint
 from s3cr3tro4t3 import secret_route
-
-
-
 
 ehseg = 75
 energia = 75

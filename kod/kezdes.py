@@ -4,7 +4,7 @@
 
     
 def kezdo_valasztas(): 
-    import os
+
     global ehseg
     global energia
     global penz
@@ -32,7 +32,7 @@ def kezdo_valasztas():
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     input("Nyomj entert a folytatáshoz!")
     
-    os.system("cls")
+   
 
 
     print("Az orrodat megcsavarja az égett benzinből áradó füst, amely a buszok kipufogójából ered, a füled pedig brazilmagyarok ordibálásától cseng.")
