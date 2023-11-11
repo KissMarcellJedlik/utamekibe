@@ -1,3 +1,4 @@
+import os
 from random import randint
 from s3cr3tro4t3 import secret_route
 
@@ -544,8 +545,6 @@ def aluljaro():
                     penz -= 200
                 elif penz < 200:
                     print('"Nem adok neked semmit, még egy kétszázas sincs nálad!"')
-            print(f"Bendőd: {ehseg}%")
-            print(f"Pénzed: {penz}Ft")
         if valasztas1 == 3:
             if randint(1, 2) == 1:
                     energia -= 15
@@ -560,12 +559,12 @@ def aluljaro():
                 csabika_szeret = True
             elif penz < 500:
                 print('"Nincs is nálad annyi, kotródj a szemem elől!"')
-            print(f"Pénzed: {penz}Ft")
     
         energia -= 5
         ehseg -= 5
         print(f"Energiád: {energia}%")      
-        
+        print(f"Bendőd: {ehseg}%")
+        print(f"Pénzed: {penz}Ft")
 
     szazas = False
     felvetted = True
