@@ -24,7 +24,17 @@ def csabikaevent():
     1 == print('1 - Megpróbálod elkerülni.')
     2 == print('2 - Odamész.')
     print("━━━━━━━━━━━━━━━━━━━━━━━")
-    valasztas = int(input('Választás: '))
+    valasztas = while True:
+                        try:
+                            valaszt = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
     if valasztas == 1:
         print('Odaköszönt neked, de nem foglalkoztál vele. Később ezt lehet megbánod')
 
@@ -35,12 +45,32 @@ def csabikaevent():
         3 == print('3 - Beszólsz neki, hogy hallgasson valami normális nótát')
         4 == print('4 - Adsz neki egy ötszázast')
         print("━━━━━━━━━━━━━━━━━━━━━━━")
-        valasztas1 = int(input('Választás: '))
+        valasztas1 = while True:
+                        try:
+                            valaszt = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
         if valasztas1 == 1:
             print('1 - "Csabikám, halljak meg, aggyá mán egy öcsit."')
             print('2 - "Buszjegyre nem tudsz adni egy 200ast?"')
             print('3 - "Most azonnal pengessél ki egy Rákóczit!"')
-            valasztas3 = int(input('Választás: '))
+            valasztas3 = while True:
+                        try:
+                            valaszt = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
             if valasztas3 == 1 or 2 or 3:
                 print('"Jáj mó, 150Ft-tal tudlak megáldani, de kotródj a szemem elől."')
                
@@ -49,7 +79,17 @@ def csabikaevent():
         if valasztas1 == 2:
             print('1 - " Jajj Csabusom, egy túrós batyuval dobjál mán meg "')
             print('2 - " Nincs ételed te fattyú??"')
-            valasztas4 = int(input('Választás: '))
+            valasztas4 = while True:
+                        try:
+                            valaszt = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
             if valasztas4 == 1 or 2:
                 print(f'Adott egy sült patkány combot, de lehúzott 200Ft-tal')
                 ehseg += 30

@@ -13,12 +13,32 @@ match randint(1,2):
                 print('Megpillantottál egy Adyvárosi lakótelepi szökevényt.')    
         print('1 - Megközelíted')
         print('2 - Figyelmen kívül hagyod')
-        valasztas = int(input('Választás: '))
+        valasztas = while True:
+                        try:
+                            valaszt = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
         match valasztas:
             case 1:
                 print('1 - "Aggyál mán egy kis pénzt, ne legyél irigy"')
                 print('2 - Leosztasz neki egy parasztlengőt, mert nem tetszik a kiállása')
-                valasztas1 = int(input('Választás: '))
+                valasztas1 = while True:
+                        try:
+                            valaszt = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
                 match valasztas1:
                     case 1:
                         if parfum == True:
@@ -30,7 +50,17 @@ match randint(1,2):
                                         print('"Látom minőségi tavaszias illatú pahfüm lóg ki a zsebedbű, add el egy ezresé" Eltradeled?')
                                         print('1 - Igen')
                                         print('2 - Nem')
-                                        valasztas2 = int(input('Választás: '))
+                                        valasztas2 = while True:
+                        try:
+                            valaszt = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
                                         match valasztas2:
                                             case 1:
                                                 parfum = False

@@ -17,7 +17,17 @@ def kucciparfum():
     print('3 - "Add ide a suskád, te hobó!"')
     print('4 - "Érdekelne"')
     print("━━━━━━━━━━━━━━━━━━━━━━━")
-    valasztas = int(input('Választás: '))
+    valasztas = while True:
+                        try:
+                            valaszt = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
     if valasztas == 1:
         print('A bácsi mérges lett, homloklebenyen rúgott és elvette az összes pénzed!')
         print('Vesztettél!')
