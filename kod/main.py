@@ -350,8 +350,18 @@ def Baross_hid():
                         else:
                             break
             match valaszt6:
-                case 1:
-                    db = int(input('"Mennyiszer szeretnél pörgetni (majd a sors eldönti a szerencsédet)?"'))
+                case 1:          
+                    while True:
+                        try:
+                            db = int(input('"Mennyiszer szeretnél pörgetni (majd a sors eldönti a szerencsédet)?"'))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if db > 10:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
                     for i in range(db):
                         osszeg = randint(-500, 500)
                         print(f'{i+1}. {osszeg} Ft')
@@ -959,16 +969,16 @@ def aluljaro():
                                 ujrakezdes()
 
     print('Továbbmentél majd probléma nélkül eljutottál a mekiig, az erős csontozatú emberek törzshelyére.')
-    if penz >= 1400:
+    if penz >= 1400 and csabika_gyulol == False:
         print('Bementél a mekibe és kikérted a kajádat.')
         print("Nyertél!")
-    if penz < 1400 and csabika_szeret == False:
+    if penz < 1400 and csabika_szeret == False and csabika_gyulol == False:
         print('Elértél a mekihez biztonságban, de nem volt elég pénzed.')
         print("Vesztettél!")
-    if penz < 1400 and csabika_szeret == True:
+    if penz < 1400 and csabika_szeret == True and csabika_gyulol == False:
         print('Az étterem előtt meglátod Csabikát aki ígéretét betartva kiegészített téged.')
         print("Nyertél!")
-    if csabika_gyulol == True:
+    if csabika_gyulol == True and haribo == False:
         print('A meki előtt Csabika elkap egy zsákba tesz, nehéz köveket köt rád, és belehajít a Dunába.')
         print('Vesztettél!')
     if csabika_gyulol == True and haribo == True:  
