@@ -14,9 +14,12 @@
 }
 body
 {
-    background: #000;
+    background-image: url(https://cdn.wallpapersafari.com/84/71/C8YeJH.jpg);
     min-height: 200vh;
     color: white;
+    
+    
+    
     
 }
 header
@@ -88,12 +91,8 @@ header.sticky ul li a
 {
     color: #000;
 }
-.container
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
 #kep{
     width: 400px;
 }
@@ -101,4 +100,41 @@ header.sticky ul li a
     float: right;
 }
 
+#szoveg{
+    padding-top: 50px;
+    font-style: italic;
+    
+}
+.katt{
+    margin-left: 90px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: #F05E2D;
+    color: white;
+    text-decoration: none;
+}
+.vonal{
+    text-decoration: none;
+    color: white;
 
+}
+.katt:hover{
+    margin-left: 90px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+h1{
+    text-shadow: 3px 3px 4px blue;
+}
+#habi{
+    text-align: justify !important; 
+    position: absolute;
+    text-align: center;
+}
+#margin{
+    margin-left: 220px !important;
+}
