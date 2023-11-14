@@ -1,6 +1,8 @@
-import os
 from random import randint
 from s3cr3tro4t3 import secret_route
+
+
+
 
 ehseg = 75
 energia = 75
@@ -25,20 +27,20 @@ def ujrakezdes():
     print(" 2 - Nem")
     print("━━━━━━━━━━━━━━━━━━━━━━━")
     if boltos_neni == True:
-        print('s3cr3t ro4te')                      
+        print('s3cr3t ro4te')
+
     while True:
         try:
             valasztas = int(input('Választás: '))
         except ValueError:
             print("Jó választ adjááá  te csicskalángos.")
             continue
-        if valasztas > 2:
+        if valasztas > 3:
             print("Jó választ adjááá  te csicskalángos.")
             continue
         else:
             break
     if valasztas == 1:
-        os.system('cls')
         jatek()
     if valasztas == 2:
         exit()
@@ -97,18 +99,7 @@ def Baross_hid():
                     print('1 - Ne nyúlj hozzám te csövimen!')
                     print('2 - Adsz  neki egy zacskó fehérjét')
                     print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
-                    while True:
-                        try:
-                            valaszt1 = int(input('Választás: '))
-                        except ValueError:
-                            print("Jó választ adjááá  te csicskalángos.")
-                            continue
-                        if valaszt1 > 2:
-                            print("Jó választ adjááá  te csicskalángos.")
-                            continue
-                        else:
-                            break
-                        
+                    valaszt1 = int(input('Választás:'))
                     match valaszt1:
                         case 1:
                             print('Miután rájöttél kivel beszélsz, terrorodban az aluljáró felé veszed az irányt mégiscsak')
@@ -125,6 +116,7 @@ def Baross_hid():
             print('1 - Elmész  mellettük, rálépve az úttestre')
             print('2 - Szólsz nekik hogy menjenek alrébb')
             print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+            valaszt2 = int(input('Választás: '))
             while True:
                 try:
                     valaszt2 = int(input('Választás: '))
@@ -197,7 +189,7 @@ def Baross_hid():
                         except ValueError:
                             print("Jó választ adjááá  te csicskalángos.")
                             continue
-                        if valaszt > 2:
+                        if valaszt1 > 2:
                             print("Jó választ adjááá  te csicskalángos.")
                             continue
                         else:
@@ -217,17 +209,16 @@ def Baross_hid():
             print('2 - Szölsz nekik hogy menjenek alrébb')
             print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
             while True:
-                try:
-                    valaszt4 = int(input('Választás: '))
-                except ValueError:
-                    print("Jó választ adjááá  te csicskalángos.")
-                    continue
-                if valaszt > 2:
-                    print("Jó választ adjááá  te csicskalángos.")
-                    continue
-                else:
-                    break
-                      
+                        try:
+                            valaszt4 = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt4 > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
             match valaszt4:
                 case 1:
                     match randint(1,2):
@@ -253,16 +244,16 @@ def Baross_hid():
             print('2 - Szölsz nekik hogy menjenek alrébb')
             print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
             while True:
-                try:
-                    valaszt4 = int(input('Választás: '))
-                except ValueError:
-                    print("Jó választ adjááá  te csicskalángos.")
-                    continue
-                if valaszt4 > 2:
-                    print("Jó választ adjááá  te csicskalángos.")
-                    continue
-                else:
-                    break
+                        try:
+                            valaszt4 = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt4 > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
             match valaszt4:
                 case 1:
                     match randint(1,2):
@@ -289,17 +280,7 @@ def Baross_hid():
                     print('1 - Neked nincs véntrotty')
                     print('2 - van még kettő a farzsebemben, szívjuk el együtt móni')
                     print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
-                    while True:
-                        try:
-                            valaszt = int(input('Választás: '))
-                        except ValueError:
-                            print("Jó választ adjááá  te csicskalángos.")
-                            continue
-                        if valaszt > 2:
-                            print("Jó választ adjááá  te csicskalángos.")
-                            continue
-                        else:
-                            break
+                    valasz3 = int(input('Választás:'))
                     match valasz3:
                                 case 1:
                                     print('Gálik úr ledobott a hídról a sínekre, ahol megcsókoltad a kispiros mozdony kerekét')
@@ -319,17 +300,7 @@ def Baross_hid():
                     print('1 - Ne nyúlj hozzám te csövimen!')
                     print('2 - Adsz  neki egy zacskó fehérjét')
                     print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
-                    while True:
-                        try:
-                            valaszt1 = int(input('Választás: '))
-                        except ValueError:
-                            print("Jó választ adjááá  te csicskalángos.")
-                            continue
-                        if valaszt1 > 2:
-                            print("Jó választ adjááá  te csicskalángos.")
-                            continue
-                        else:
-                            break
+                    valaszt1 = int(input('Választás:'))
                     match valaszt1:
                         case 1:
                             print('Miután rájöttél kivel beszélsz, terrorodban az aluljáró felé veszed az irányt mégiscsak')
@@ -347,16 +318,16 @@ def Baross_hid():
     print(" 2 - Nem")
     print("━━━━━━━━━━━━━━━━━━━━━━━")
     while True:
-        try:
-            valaszt5 = int(input('Választás: '))
-        except ValueError:
-            print("Jó választ adjááá  te csicskalángos.")
-            continue
-        if valaszt5 > 2:
-            print("Jó választ adjááá  te csicskalángos.")
-            continue
-        else:
-            break
+                        try:
+                            valaszt5 = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt5 > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
     match valaszt5:
         case 1:
             
@@ -368,16 +339,16 @@ def Baross_hid():
             print('3 - Csak beköszöntem')
             print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
             while True:
-                try:
-                    valaszt6 = int(input('Választás: '))
-                except ValueError:
-                    print("Jó választ adjááá  te csicskalángos.")
-                    continue
-                if valaszt6 > 2:
-                    print("Jó választ adjááá  te csicskalángos.")
-                    continue
-                else:
-                    break
+                        try:
+                            valaszt6 = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valaszt6 > 3:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
             match valaszt6:
                 case 1:
                     db = int(input('"Mennyiszer szeretnél pörgetni (majd a sors eldönti a szerencsédet)?"'))
@@ -414,9 +385,6 @@ def Baross_hid():
         except ValueError:
             print("Jó választ adjááá  te csicskalángos.")
             continue
-        if valasztas > 2:
-            print("Jó választ adjááá  te csicskalángos.")
-            continue
         else:
             break
     match valasztas:
@@ -424,16 +392,16 @@ def Baross_hid():
             print('1 - "Aggyál mán egy kis pénzt, ne legyél irigy"')
             print('2 - Leosztasz neki egy parasztlengőt, mert nem tetszik a kiállása')
             while True:
-                try:
-                    valasztas1 = int(input('Választás: '))
-                except ValueError:
-                    print("Jó választ adjááá  te csicskalángos.")
-                    continue
-                if valasztas1 > 2:
-                    print("Jó választ adjááá  te csicskalángos.")
-                    continue
-                else:
-                    break
+                        try:
+                            valasztas1 = int(input('Választás: '))
+                        except ValueError:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        if valasztas1 > 2:
+                            print("Jó választ adjááá  te csicskalángos.")
+                            continue
+                        else:
+                            break
             match valasztas1:
                 case 1:
                     if parfum == True:
@@ -450,15 +418,24 @@ def Baross_hid():
                                         print("━━━━━━━━━━━━━━━━━━━━━━━")
                                         while True:
                                             try:
-                                                valaszt = int(input('Választás: '))
+                                                valasztas2 = int(input('Választás: '))
                                             except ValueError:
                                                 print("Jó választ adjááá  te csicskalángos.")
                                                 continue
-                                            if valaszt > 2:
+                                            if valasztas2 > 2:
                                                 print("Jó választ adjááá  te csicskalángos.")
                                                 continue
                                             else:
-                                                break                               
+                                                break
+                                        match valasztas2:
+                                            case 1:
+                                                parfum = False
+                                                penz += 1000
+                                                print(f'Pénzed:{penz} Ft')
+                                            case 2:
+                                                print('"Akkor a szíved legyen szabadnapos"')
+                                                        
+                                                    
                     if parfum == False:
                             print('"Látom nem vagy egy kobold ezért megszánlak."')
                             penz += 150
@@ -576,7 +553,7 @@ def aluljaro():
 
         
 
-    print('Az aluljáró előtt meglátod egyik ismerősödet, Csabikát, aki a búcsúban lőtt JBL-én hallgatja a muzsikát. Mit teszel?')
+    print('Az aluljáró előtt meglátod egyik ismerősödet, Csabikát, aki az búcsúban lőtt JBL-én hallgatja a muzsikát. Mit teszel?')
             
     print("━━━━━━━━━━━━━━━━━━━━━━━")
     print('1 - Megpróbálod elkerülni.')
@@ -613,7 +590,7 @@ def aluljaro():
                         except ValueError:
                             print("Jó választ adjááá  te csicskalángos.")
                             continue
-                        if valasztas1 > 2:
+                        if valasztas1 > 4:
                             print("Jó választ adjááá  te csicskalángos.")
                             continue
                         else:
@@ -628,7 +605,7 @@ def aluljaro():
                         except ValueError:
                             print("Jó választ adjááá  te csicskalángos.")
                             continue
-                        if valasztas3 > 2:
+                        if valasztas3 > 3:
                             print("Jó választ adjááá  te csicskalángos.")
                             continue
                         else:
@@ -651,12 +628,13 @@ def aluljaro():
                         else:
                             break
             if valasztas4 == 1 or 2:
-                if penz >= 200:
-                    print(f'Adott egy sült patkány combot, de lehúzott 200Ft-tal')
-                    ehseg += 30
-                    penz -= 200
-                elif penz < 200:
-                    print('"Nem adok neked semmit, még egy kétszázas sincs nálad!"')
+                print(f'Adott egy sült patkány combot, de lehúzott 200Ft-tal')
+                ehseg += 30
+                penz -= 200
+            if valasztas4 == 1 or 2 and penz >= 200:
+                print('"Nem adok neked semmit, még egy kétszázas sincs nálad!"')
+            print(f"Bendőd: {ehseg}%")
+            print(f"Pénzed: {penz}Ft")
         if valasztas1 == 3:
             if randint(1, 2) == 1:
                     energia -= 15
@@ -671,12 +649,13 @@ def aluljaro():
                 csabika_szeret = True
             elif penz < 500:
                 print('"Nincs is nálad annyi, kotródj a szemem elől!"')
+        print(f"Pénzed: {penz}Ft")
     
         energia -= 5
         ehseg -= 5
-        print(f"Energiád: {energia}%")      
         print(f"Bendőd: {ehseg}%")
-        print(f"Pénzed: {penz}Ft")
+        print(f"Energiád: {energia}%")      
+        
 
     szazas = False
     felvetted = True
@@ -787,17 +766,7 @@ def aluljaro():
         print(f" 1 - igen")
         print(f" 2 - Nem")
         print("━━━━━━━━━━━━━━━━━━━━━━━")
-        while True:
-                        try:
-                            valaszt1 = int(input('Választás: '))
-                        except ValueError:
-                            print("Jó választ adjááá  te csicskalángos.")
-                            continue
-                        if valaszt1 > 2:
-                            print("Jó választ adjááá  te csicskalángos.")
-                            continue
-                        else:
-                            break
+        valaszt1 = int(input("Választás: "))
         if valaszt1 == 1:
             ehseg -= 5
             energia -= 5
@@ -834,7 +803,7 @@ def aluljaro():
                         except ValueError:
                             print("Jó választ adjááá  te csicskalángos.")
                             continue
-                        if valasztas > 2:
+                        if valasztas > 4:
                             print("Jó választ adjááá  te csicskalángos.")
                             continue
                         else:
@@ -867,7 +836,7 @@ def aluljaro():
     ehseg -=10
     print(f"Energia: {energia}%")
     print(f"Bendőd: {ehseg}%")
-    print('Ezután átkeltél mégegy zebrán, eddig nem ért veszély forrás eme göröngyös úton! Megérkeztél a Baross út elejére.')
+    print('Ezután átkeltél mégegy zebrán, eddig nem ért veszély forrás eme görönyös úton! Megérkeztél a Baross út elejére.')
 
     szazas = False
     felvetted = True
