@@ -717,7 +717,7 @@ def aluljaro():
         print(" 2 - 5dkg parizert meg két zsemlyét szeretnék!")
         print(" 3 - Van valami ingyen?")
         print(" 4 - Szó nélkül kimész")
-        print(" 5 - pörgessél ki egy energitalt! ")
+        print(" 5 - pörgessél ki egy energiaitalt! ")
         print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
         valaszt2 = int(input("Választás: "))
         if valaszt2 == 1:
@@ -753,7 +753,7 @@ def aluljaro():
         if valaszt2 == 4:
             print("Kimentél")
         if valaszt2 == 5 and penz > 250:
-            print("'200 Forint lesz!'")
+            print('"200 Forint lesz!"')
             penz -= 250
             energia += 20
             print(f"Energiád: {energia}%")
