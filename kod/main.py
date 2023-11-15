@@ -21,6 +21,9 @@ def ujrakezdes():
     global penz
     global energia
     global ehseg
+    penz = 500
+    energia = 75
+    ehseg = 75
     print('Újrakezded?')
     print("━━━━━━━━━━━━━━━━━━━━━━━")
     print(" 1 - igen")
@@ -46,9 +49,6 @@ def ujrakezdes():
         exit()
     if valasztas == 3 and boltos_neni == True:
         secret_route()
-    penz = 500
-    energia = 75
-    ehseg = 75
 
 
 def Baross_hid():
