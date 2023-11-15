@@ -13,10 +13,7 @@ boltos_neni = False
 haribo = False
 csabika_gyulol = False
 parfum = False
-if penz <= 0:
-    penz == 0
-if energia >= 100:
-    energia == 100
+
 def ujrakezdes():
     global penz
     global energia
@@ -462,16 +459,17 @@ def Baross_hid():
     print('Továbbmentél.')
 
     print('Továbbmentél majd probléma nélkül eljutottál a mekiig, az erős csontozatú emberek törzshelyére.')
-    if penz >= 1400:
+    print('Továbbmentél majd probléma nélkül eljutottál a mekiig, az erős csontozatú emberek törzshelyére.')
+    if penz >= 1400 and csabika_gyulol == False:
         print('Bementél a mekibe és kikérted a kajádat.')
         print("Nyertél!")
-    if penz < 1400 and csabika_szeret == False:
+    if penz < 1400 and csabika_szeret == False and csabika_gyulol == False:
         print('Elértél a mekihez biztonságban, de nem volt elég pénzed.')
-        print('Vesztettél!')
-    if penz < 1400 and csabika_szeret == True:
+        print("Vesztettél!")
+    if penz < 1400 and csabika_szeret == True and csabika_gyulol == False:
         print('Az étterem előtt meglátod Csabikát aki ígéretét betartva kiegészített téged.')
         print("Nyertél!")
-    if csabika_gyulol == True:
+    if csabika_gyulol == True and haribo == False:
         print('A meki előtt Csabika elkap egy zsákba tesz, nehéz köveket köt rád, és belehajít a Dunába.')
         print('Vesztettél!')
     if csabika_gyulol == True and haribo == True:  
