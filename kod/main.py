@@ -504,17 +504,33 @@ def jatek():
     print(" 1 - Aluljáró")
     print(" 2 - Baross Gábor híd")
     print("━━━━━━━━━━━━━━━━━━━━━━━")
-    valaszt = int(input("Választás: "))
-             
-    while valaszt != 1 or valaszt != 2:
+    while True:
+        try:
+            valaszt = int(input('Választás: '))
+        except ValueError:
+            print("Jó választ adjááá  te csicskalángos.")
+            continue
+        if valaszt > 2:
+            print("Jó választ adjááá  te csicskalángos.")
+            continue
+        else:
+            break
+    
+            
+    while True:
+        try:
             valaszt1 = int(input('BIztOoOOs nem a másik irányt választod(1 - Aluljáró, 2 - Baross Gábor híd)?'))
-            if  valaszt1 == 1:
-                print('')
-                break
-            if valaszt1 == 2:
-                Baross_hid()  
-                break
-    aluljaro()
+        except ValueError:
+            print("Jó választ adjááá  te csicskalángos.")
+            continue
+        if valaszt1 > 2:
+            print("Jó választ adjááá  te csicskalángos.")
+            continue
+        if valaszt1 == 1:
+            aluljaro()
+        if valaszt1 == 2:
+            Baross_hid()
+    
 
 def aluljaro():
     global csabika_gyulol
