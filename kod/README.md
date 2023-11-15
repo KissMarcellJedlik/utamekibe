@@ -4,4 +4,4 @@ De a látszat néha csal, mivel rengeteg veszéllyel kell szembenéznie, hiszen 
 Tagok:
 Ikker Benjámin: alap gráf tervezése, program írása, weboldal szerkesztése
 Hutter Áron: Gráf szerkesztése, program írása, weboldal szerkesztése
-Kiss Marcell: program írása, weboldal megtervezése, megírása
+Kiss Marcell: Gráf szerkesztése, program írása, weboldal megtervezése, megírása
